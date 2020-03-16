@@ -18,9 +18,13 @@
   <remote name="oe-mirror"
           fetch="git://github.com/openembedded"/>
   <project name="meta-openembedded"
-           remote="oe-mirror"
+           remote="oe"
            revision="a24acf94d48d635eca668ea34598c6e5c857e3f8"
            path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="6740870aac9627c99f03a20fd49ffc9ae8acc1e3"
+           path="sources/meta-python2"/>
 
   <!-- Qt -->
   <remote name="qt"
