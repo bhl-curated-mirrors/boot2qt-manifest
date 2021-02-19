@@ -8,7 +8,7 @@
   <remote fetch="ssh://codereview.qt-project.org/yocto" name="gerrit"/>
   <remote fetch="git://git.yoctoproject.org" name="intel"/>
   <remote fetch="git://github.com/openembedded" name="oe-mirror"/>
-  <remote fetch="git://github.com/madisongh" name="madisongh"/>
+  <remote fetch="git://github.com/OE4T" name="OE4T"/>
   <remote fetch="ssh://git@git.qt.io/boot2qt" name="playground"/>
   <remote fetch="git://github.com/renesas-rcar" name="renesas"/>
   <remote fetch="git://git.linaro.org/openembedded" name="linaro"/>
@@ -58,7 +58,7 @@
            revision="6add41510412ca196efb3e4f949d403a8b6f35d7"
            path="sources/meta-intel"/>
   <project name="meta-tegra"
-           remote="madisongh"
+           remote="OE4T"
            revision="fba09b70a8ac36248e5fcea611e3bb661bb089fc"
            path="sources/meta-tegra"/>
   <project name="meta-renesas"

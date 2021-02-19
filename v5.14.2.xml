@@ -71,10 +71,10 @@
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
-  <remote name="madisongh"
-          fetch="git://github.com/madisongh"/>
+  <remote name="OE4T"
+          fetch="git://github.com/OE4T"/>
   <project name="meta-tegra"
-           remote="madisongh"
+           remote="OE4T"
            revision="90ad5095b54f21495f073f0b5c555b85522e4b06"
            path="sources/meta-tegra"/>
 

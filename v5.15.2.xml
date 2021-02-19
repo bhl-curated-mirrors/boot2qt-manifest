@@ -71,10 +71,10 @@
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
-  <remote name="madisongh"
-          fetch="git://github.com/madisongh"/>
+  <remote name="OE4T"
+          fetch="git://github.com/OE4T"/>
   <project name="meta-tegra"
-           remote="madisongh"
+           remote="OE4T"
            revision="b97c15cbb87323a56e73873efd825ef1901e6172"
            path="sources/meta-tegra"/>
   <!-- internal layer for the nvidia devnet downloads -->
