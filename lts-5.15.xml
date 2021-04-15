@@ -53,7 +53,7 @@
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"
+           revision="81d336c6c4a78916b06eb4d2190e39bc23f22336"
            path="sources/meta-freescale-3rdparty"/>
 
   <!-- Raspberry Pi -->
@@ -67,7 +67,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="55b53335c1bf5e120e8038f86ab69d5417bf3e73"
+           revision="d9942d4c3a710406b051852de7232db03c297f4e"
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
@@ -103,6 +103,6 @@
           fetch="git://github.com/boundarydevices"/>
   <project name="meta-boundary"
            remote="boundary"
-           revision="733e7b25e179d5ad6da0f32e6103fed8ba2c6688"
+           revision="5e33c4b077a155ca858683b2e1f776694932f116"
            path="sources/meta-boundary"/>
 </manifest>
