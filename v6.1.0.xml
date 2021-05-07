@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="d5d6286a66f46f4523e35e0e3f20cd7396195fdc"
+           upstream="gatesgarth"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="352d8b0aa3c7bbd5060a4cc2ebe7c0e964de4879"
+           upstream="gatesgarth"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <remote name="oe-mirror"
+          fetch="git://github.com/openembedded"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="945f062ff098dc9c8ba8d22c5eef88adec60730d"
+           upstream="gatesgarth"
+           path="sources/meta-openembedded"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="9093a76a8f6fe5e8c6e8c676ef658e4567f0c391"
+           upstream="6.1"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+  </project>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="bf02f7ab8f0072a09b36af8bbcb08a524665e912"
+           upstream="6.1"
+           path="sources/meta-qt6"/>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="git://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="f99c8596dc21d9eb410fec38ea2a5e433c92a00a"
+           upstream="gatesgarth"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="ed30fd813a87b16317cfef254009d03dcfa5b2f4"
+           upstream="gatesgarth"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="09a3c11696c75593f8e475da5dfb401016c6aaca"
+           upstream="gatesgarth"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="8e72e716c96d3480c3e1cf2096a8e64c51b9f24b"
+           upstream="gatesgarth"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="git://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="0d963e918b6a210c1bd3c6e094d15896858b8731"
+           upstream="gatesgarth"
+           path="sources/meta-tegra"/>
+  <!-- internal layer for the nvidia devnet downloads -->
+  <remote name="playground"
+          fetch="ssh://git@git.qt.io/boot2qt"/>
+  <project name="nvidia-devnet-mirror"
+           remote="playground"
+           revision="8ee9cd3c025cf8b36343fddc77545e597c0d874d"
+           path="sources/nvidia-devnet-mirror"
+           groups="notdefault"/>
+
+  <!-- Toradex -->
+  <remote name="toradex"
+          fetch="git://git.toradex.com"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="2b830c7a4aaf39dc7ea971c638b5042290c9ee1e"
+           upstream="dunfell-5.x.y"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="599cd72b82723ac096bb5c9bea2d82bdc6b38185"
+           upstream="dunfell-5.x.y"
+           path="sources/meta-toradex-nxp"/>
+
+</manifest>
