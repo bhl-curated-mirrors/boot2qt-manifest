@@ -40,7 +40,7 @@
   </project>
   <project name="meta-boot2qt-renesas"
            remote="qt"
-           revision="zeus"
+           revision="lts-5.15"
            path="sources/meta-boot2qt-renesas">
     <linkfile dest="sources/templates" src="conf"/>
   </project>
