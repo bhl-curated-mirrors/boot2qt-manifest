@@ -5,25 +5,27 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="d88d62c20d7d8da85f02edb170dae0280624ad7e"
+           revision="43060f59ba60a0257864f1f7b25b51fac3f2d2cf"
+           upstream="dunfell"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="756963cc28ebc163df7d7f4b4ee004c18d3d3260"
+           revision="524de686205b5d6736661d4532f5f98fee8589b7"
+           upstream="dunfell"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
   <remote name="oe"
           fetch="git://git.openembedded.org"/>
-  <remote name="oe-mirror"
-          fetch="git://github.com/openembedded"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"
+           revision="85f8047c71047d93cf79a954142157f85079968d"
+           upstream="dunfell"
            path="sources/meta-openembedded"/>
   <project name="meta-python2"
            remote="oe"
-           revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"
+           revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8"
+           upstream="dunfell"
            path="sources/meta-python2"/>
 
   <!-- Qt -->
@@ -49,17 +51,20 @@
           fetch="git://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="14f1a630a47375432f93c556927b879b51d84c4e"
+           revision="12c3eed6a90b436565126d8ba6934f794b816e25"
+           upstream="dunfell"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision="81d336c6c4a78916b06eb4d2190e39bc23f22336"
+           revision="537cb85e4db17d1f6b356a92112b32ae2e39b235"
+           upstream="dunfell"
            path="sources/meta-freescale-3rdparty"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="0e05098853eea77032bff9cf81955679edd2f35d"
+           revision="59c2d6f7a8b1239bd7b587b9180c2a55f9c695a2"
+           upstream="dunfell"
            path="sources/meta-raspberrypi"/>
 
   <!-- Intel -->
@@ -67,7 +72,8 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="d9942d4c3a710406b051852de7232db03c297f4e"
+           revision="29ded43c470e766a21382d63424c61cdeb70203e"
+           upstream="dunfell"
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
@@ -75,7 +81,8 @@
           fetch="git://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="d1b17788a18270d7d6ddcd564d85900834419317"
+           revision="839366fc96ba4fe5d3affadc34acf1a4d29d4b8a"
+           upstream="dunfell"
            path="sources/meta-tegra"/>
   <!-- internal layer for the nvidia devnet downloads -->
   <remote name="playground"
@@ -91,11 +98,13 @@
           fetch="git://git.toradex.com"/>
   <project name="meta-toradex-bsp-common"
            remote="toradex"
-           revision="a8f298d69fe4cdab6c59a8965fbc5cdba83f3a7e"
+           revision="869312de75c9187e02523ff2cfa806144ace949f"
+           upstream="dunfell-5.x.y"
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
-           revision="d7121ef91af1b15f1038cb4cb51e53bab8c53d89"
+           revision="4a58243170331a1afb9fa0aec8fef492f87f131b"
+           upstream="dunfell-5.x.y"
            path="sources/meta-toradex-nxp"/>
 
   <!-- BoundaryDevices -->
@@ -104,5 +113,6 @@
   <project name="meta-boundary"
            remote="boundary"
            revision="5e33c4b077a155ca858683b2e1f776694932f116"
+           upstream="dunfell"
            path="sources/meta-boundary"/>
 </manifest>
