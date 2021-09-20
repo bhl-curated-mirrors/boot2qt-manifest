@@ -5,25 +5,26 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="d88d62c20d7d8da85f02edb170dae0280624ad7e"
+           revision="43060f59ba60a0257864f1f7b25b51fac3f2d2cf"
+           upstream="dunfell"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="756963cc28ebc163df7d7f4b4ee004c18d3d3260"
+           revision="524de686205b5d6736661d4532f5f98fee8589b7"
+           upstream="dunfell"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
   <remote name="oe"
           fetch="git://git.openembedded.org"/>
-  <remote name="oe-mirror"
-          fetch="git://github.com/openembedded"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"
+           revision="85f8047c71047d93cf79a954142157f85079968d"
+           upstream="dunfell"
            path="sources/meta-openembedded"/>
   <project name="meta-python2"
            remote="oe"
-           revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"
+           revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8"
            path="sources/meta-python2"/>
 
   <!-- Qt -->
@@ -54,7 +55,7 @@
           fetch="git://github.com/renesas-rcar"/>
   <project name="meta-renesas"
            remote="renesas"
-           revision="9a58b78a5c2960332b6ed4b02a6d8d5c606fa3e5"
+           revision="a5c25c2ae6710fab5796a5fdc56117c819a4d7e5"
            path="sources/meta-renesas"/>
 
   <!-- internal layer for the proprietary device drivers -->
@@ -62,7 +63,7 @@
           fetch="ssh://git@git.qt.io/boot2qt"/>
   <project name="renesas-rcar3"
            remote="playground"
-           revision="9018f7478a0a6646a61e8ee5cad8811fbc3ea927"
+           revision="a83adef6bd26f0ab4ea6681c4a0c1855624fbbd8"
            path="sources/renesas-rcar3"
            groups="notdefault"/>
 </manifest>
