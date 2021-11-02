@@ -16,7 +16,7 @@
   <remote name="oe"
           fetch="git://git.openembedded.org"/>
   <remote name="oe-mirror"
-          fetch="git://github.com/openembedded"/>
+          fetch="https://github.com/openembedded"/>
   <project name="meta-openembedded"
            remote="oe"
            revision="9e60d30669a2ad0598e9abf0cd15ee06b523986b"
@@ -46,7 +46,7 @@
 
   <!-- NXP -->
   <remote name="freescale"
-          fetch="git://github.com/Freescale"/>
+          fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
            revision="14f1a630a47375432f93c556927b879b51d84c4e"
@@ -72,7 +72,7 @@
 
   <!-- NVIDIA -->
   <remote name="OE4T"
-          fetch="git://github.com/OE4T"/>
+          fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
            revision="b97c15cbb87323a56e73873efd825ef1901e6172"
@@ -100,7 +100,7 @@
 
   <!-- BoundaryDevices -->
   <remote name="boundary"
-          fetch="git://github.com/boundarydevices"/>
+          fetch="https://github.com/boundarydevices"/>
   <project name="meta-boundary"
            remote="boundary"
            revision="317c4f037b8b82811be56a271266fb31cdd1fc7a"
