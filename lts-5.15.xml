@@ -53,7 +53,7 @@
 
   <!-- Device specific layers -->
   <remote name="renesas"
-          fetch="git://github.com/renesas-rcar"/>
+          fetch="https://github.com/renesas-rcar"/>
   <project name="meta-renesas"
            remote="renesas"
            revision="a5c25c2ae6710fab5796a5fdc56117c819a4d7e5"

@@ -16,7 +16,7 @@
   <remote name="oe"
           fetch="git://git.openembedded.org"/>
   <remote name="oe-mirror"
-          fetch="git://github.com/openembedded"/>
+          fetch="https://github.com/openembedded"/>
   <project name="meta-openembedded"
            remote="oe"
            revision="a24acf94d48d635eca668ea34598c6e5c857e3f8"
@@ -51,7 +51,7 @@
 
   <!-- Device specific layers -->
   <remote name="renesas"
-          fetch="git://github.com/renesas-rcar"/>
+          fetch="https://github.com/renesas-rcar"/>
   <project name="meta-renesas"
            remote="renesas"
            revision="1b33df50c1f0c3848deb65b636d5134ed0d0d328"
