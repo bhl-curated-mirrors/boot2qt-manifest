@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="c40ac16d79026169639f47be76a3f7b9d8b5178e"
+           upstream="hardknott"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="422b96cb2b6116442be1f40dfb5bd77447d1219e"
+           upstream="hardknott"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="f72a73b42fa740130b388ba8555cdbefdee8d37d"
+           upstream="hardknott"
+           path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="810d6d842f103eb59f18b06426106462b15de7e2"
+           upstream="hardknott"
+           path="sources/meta-python2"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="6.2"
+           upstream="6.2"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+  <project name="meta-boot2qt-renesas"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-renesas">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.2"
+           upstream="6.2"
+           path="sources/meta-qt6"/>
+
+  <!-- Device specific layers -->
+  <remote name="renesas"
+          fetch="https://github.com/renesas-rcar"/>
+  <project name="meta-renesas"
+           remote="renesas"
+           upstream="hardknott-dev"
+           revision="963803a073349632c7e169dfd1c51452503e3c1c"
+           path="sources/meta-renesas"/>
+
+  <!-- internal layer for the proprietary device drivers -->
+  <remote name="playground"
+          fetch="ssh://git@git.qt.io/boot2qt"/>
+  <project name="renesas-rcar3"
+           remote="playground"
+           revision="d4219955906a4582ae808605b4178a686a3c7513"
+           upstream="v5.5.0"
+           path="sources/renesas-rcar3"
+           groups="notdefault"/>
+</manifest>
