@@ -66,7 +66,7 @@
   <project name="meta-raspberrypi"
            remote="yocto"
            revision="90b3ac6fb3037118bc711a14adcb31d2bcd7dfa4"
-           upstream="master"
+           upstream="honister"
            path="sources/meta-raspberrypi"/>
 
   <!-- Intel -->
