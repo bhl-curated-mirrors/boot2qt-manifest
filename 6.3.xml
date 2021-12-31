@@ -22,11 +22,6 @@
            revision="33c00e34fc2b085ea538445bbd1ba339024d4d8a"
            upstream="honister"
            path="sources/meta-openembedded"/>
-  <project name="meta-python2"
-           remote="oe"
-           revision="f522fa70f93a9339f3b9991082af69a09fde675a"
-           upsream="honister"
-           path="sources/meta-python2"/>
 
   <!-- Qt -->
   <remote name="qt"
