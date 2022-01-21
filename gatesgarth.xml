@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="gatesgarth"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="gatesgarth"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="gatesgarth"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="gatesgarth"
+           path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="gatesgarth"
+           path="meta-python2"/>
+</manifest>

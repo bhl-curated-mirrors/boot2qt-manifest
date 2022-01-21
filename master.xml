@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="master"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="master"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="master"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="d32bb7dbc08ea979138776bf4fb4d794b70f9b96"
+           path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="master"
+           path="meta-python2"/>
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="honister"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="honister"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="honister"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="honister"
+           path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="honister"
+           path="meta-python2"/>
+</manifest>
