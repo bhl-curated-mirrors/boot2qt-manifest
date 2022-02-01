@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="hardknott"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="hardknott"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="hardknott"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="hardknott"
+           path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="hardknott"
+           path="meta-python2"/>
+</manifest>
