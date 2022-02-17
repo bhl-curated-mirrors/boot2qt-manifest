@@ -5,7 +5,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="795339092f87672e4f68e4d3bc4cfd0e252d1831"
+           revision="refs/tags/yocto-3.1.14"
            upstream="dunfell"
            path="sources/poky"/>
   <project name="meta-mingw"
@@ -19,7 +19,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="ab9fca485e13f6f2f9761e1d2810f87c2e4f060a"
+           revision="ec978232732edbdd875ac367b5a9c04b881f2e19"
            upstream="dunfell"
            path="sources/meta-openembedded"/>
   <project name="meta-python2"
@@ -65,7 +65,7 @@
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="2e704f5ef61e4efd4b691a2ed1cad7a59811c791"
+           revision="934064a01903b2ba9a82be93b3f0efdb4543a0e8"
            upstream="dunfell"
            path="sources/meta-raspberrypi"/>
 
@@ -74,7 +74,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="625da85e7b01b71cc310267b0ba7119eb139e9f7"
+           revision="8eec569734cb1ff9c0905f4a88f9b4bfc89ed9fc"
            upstream="dunfell"
            path="sources/meta-intel"/>
 
