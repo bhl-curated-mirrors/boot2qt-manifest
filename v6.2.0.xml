@@ -27,7 +27,7 @@
   <project name="meta-python2"
            remote="oe"
            revision="810d6d842f103eb59f18b06426106462b15de7e2"
-           upsream="hardknott"
+           upstream="hardknott"
            path="sources/meta-python2"/>
 
   <!-- Qt -->
