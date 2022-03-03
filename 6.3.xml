@@ -5,7 +5,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="3c5842ebfeab2404b15892ddd70f9b6e4f022ea2"
+           revision="refs/tags/honister-3.4.2"
            upstream="honister"
            path="sources/poky"/>
   <project name="meta-mingw"
@@ -19,7 +19,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="ae34f8f8e4f7210e4e86656a5dd9fb9bc1766ce1"
+           revision="c05ae80ba680887ac924c21536091be7a1173427"
            upstream="honister"
            path="sources/meta-openembedded"/>
 
