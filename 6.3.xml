@@ -31,7 +31,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="c2eb6927083472136acfbcedb427a44240056c20"
+           revision="6.3"
            upstream="6.3"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -39,7 +39,7 @@
   </project>
   <project name="meta-qt6"
            remote="qt"
-           revision="6505a07cba776b43eb4d4e31119956da1b776244"
+           revision="6.3"
            upstream="6.3"
            path="sources/meta-qt6"/>
 
