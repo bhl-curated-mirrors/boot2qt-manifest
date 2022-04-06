@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="kirkstone"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="kirkstone"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="kirkstone"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="kirkstone"
+           path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="master"
+           path="meta-python2"/>
+</manifest>
