@@ -5,7 +5,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="master"
+           revision="cee443ae75fe8160b1c5051895747b20781916b9"
            path="poky"/>
   <project name="meta-mingw"
            remote="yocto"
