@@ -15,7 +15,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="master"
+           revision="103354c765b833958c3fffc4887d0e49768b1d35"
            path="meta-openembedded"/>
   <project name="meta-python2"
            remote="oe"
