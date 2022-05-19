@@ -68,7 +68,7 @@
           fetch="ssh://git@git.qt.io/boot2qt"/>
   <project name="renesas-rcar3"
            remote="playground"
-           revision="d4219955906a4582ae808605b4178a686a3c7513"
+           revision="593ce9366fa7605acf779a6b9a20e05f5ebfce66"
            upstream="v5.5.0"
            path="sources/renesas-rcar3"
            groups="notdefault"/>
