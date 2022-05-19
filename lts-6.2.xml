@@ -60,7 +60,7 @@
   <project name="meta-renesas"
            remote="renesas"
            upstream="hardknott-dev"
-           revision="963803a073349632c7e169dfd1c51452503e3c1c"
+           revision="f5fea83814d88a053f54171e5f64552ccf872f0f"
            path="sources/meta-renesas"/>
 
   <!-- internal layer for the proprietary device drivers -->
