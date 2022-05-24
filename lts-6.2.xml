@@ -5,13 +5,13 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/hardknott-3.3.6"
-           upstream="hardknott"
+           revision="refs/tags/yocto-4.0.1"
+           upstream="kirkstone"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/hardknott-3.3.6"
-           upstream="hardknott"
+           revision="refs/tags/yocto-4.0.1"
+           upstream="kirkstone"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
@@ -19,14 +19,9 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="786d3aa313e31a718acc9611ba3adb60573ec458"
-           upstream="hardknott"
+           revision="0b78362654262145415df8211052442823b9ec9b"
+           upstream="kirkstone"
            path="sources/meta-openembedded"/>
-  <project name="meta-python2"
-           remote="oe"
-           revision="8db9e4f6ceae33d7a4f55453d31e69f9858af4eb"
-           upstream="hardknott"
-           path="sources/meta-python2"/>
 
   <!-- Qt -->
   <remote name="qt"
@@ -59,8 +54,8 @@
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
            remote="stm"
-           revision="hardknott"
-           upstream="hardknott"
+           revision="kirkstone"
+           upstream="kirkstone"
            path="sources/meta-st-stm32mp"/>
 
 </manifest>
