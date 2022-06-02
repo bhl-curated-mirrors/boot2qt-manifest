@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/honister-3.4.3"
+           upstream="honister"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/honister-3.4.3"
+           upstream="honister"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="9a0caf5b09e14a28a54c3f8524d97530aeb8152c"
+           upstream="honister"
+           path="sources/meta-openembedded"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="6.3.1"
+           upstream="6.3.1"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+  </project>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.3.1"
+           upstream="6.3.1"
+           path="sources/meta-qt6"/>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="3d48b0fbc85c64b8070c1e2ce54ee84d0329cfeb"
+           upstream="honister"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="d323df3f5c651fc17ce0d37cf9de8bbc04dde67a"
+           upstream="honister"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="378d4b6e7ba64b6a9a701457cc3780fa896ba5dc"
+           upstream="honister"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="daf5c125a744d45d8fa395b576147edd5a714f5c"
+           upstream="honister"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="b2481c12ae0468c85b76332faa2922682245e185"
+           upstream="honister"
+           path="sources/meta-tegra"/>
+
+  <!-- Toradex -->
+  <remote name="toradex"
+          fetch="git://git.toradex.com"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="2937773bb0534c81de15cb64487d7652f051d267"
+           upstream="master"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="3c85ae965135cc70c92c35c7dccd2d545be2cd13"
+           upstream="master"
+           path="sources/meta-toradex-nxp"/>
+
+</manifest>
