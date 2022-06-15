@@ -5,12 +5,12 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.15"
+           revision="refs/tags/yocto-3.1.16"
            upstream="dunfell"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.15"
+           revision="refs/tags/yocto-3.1.16"
            upstream="dunfell"
            path="sources/meta-mingw"/>
 
@@ -19,7 +19,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="8ff12bfffcf0840d5518788a53d88d708ad3aae0"
+           revision="deee226017877d51188e0a46f9e6b93c10ffbb34"
            upstream="dunfell"
            path="sources/meta-openembedded"/>
   <project name="meta-python2"
@@ -74,7 +74,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="8eec569734cb1ff9c0905f4a88f9b4bfc89ed9fc"
+           revision="b7b463a247ea213b3d676bcebf26ab6230f60d02"
            upstream="dunfell"
            path="sources/meta-intel"/>
 
