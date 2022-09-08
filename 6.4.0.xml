@@ -5,13 +5,13 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.17"
-           upstream="dunfell"
+           revision="refs/tags/yocto-4.0.3"
+           upstream="kirkstone"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.17"
-           upstream="dunfell"
+           revision="refs/tags/yocto-4.0.3"
+           upstream="kirkstone"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
@@ -19,14 +19,9 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="52cee67833d1975a5bd52e4556c4cd312425a017"
-           upstream="dunfell"
+           revision="acbe74879807fc6f82b62525d32c823899e19036"
+           upstream="kirkstone"
            path="sources/meta-openembedded"/>
-  <project name="meta-python2"
-           remote="oe"
-           revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8"
-           upstream="dunfell"
-           path="sources/meta-python2"/>
 
   <!-- Qt -->
   <remote name="qt"
@@ -36,35 +31,30 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="lts-5.15"
-           upstream="lts-5.15"
+           revision="6.4.0"
+           upstream="6.4.0"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
   </project>
   <project name="meta-boot2qt-st"
            remote="qt"
-           revision="lts-5.15"
-           upstream="lts-5.15"
+           revision="dev"
+           upstream="dev"
            path="sources/meta-boot2qt-st">
     <linkfile dest="sources/templates" src="conf"/>
   </project>
-  <project name="meta-qt5"
+  <project name="meta-qt6"
            remote="qt"
-           revision="lts-5.15"
-           upstream="lts-5.15"
-           path="sources/meta-qt5"/>
+           revision="6.4.0"
+           upstream="6.4.0"
+           path="sources/meta-qt6"/>
 
   <!-- ST -->
   <remote name="stm"
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
            remote="stm"
-           revision="0660d5d265fbafde714cc8f46775ba725a3e0234"
-           upstream="dunfell"
-           path="sources/meta-stm32mp"/>
-  <project name="meta-st-openstlinux"
-           remote="stm"
-           revision="9160c08dfcd0b7ec0eb8f1fd96672695b09680d5"
-           upstream="dunfell"
-           path="sources/meta-st-openstlinux"/>
+           revision="kirkstone"
+           upstream="kirkstone"
+           path="sources/meta-st-stm32mp"/>
 </manifest>
