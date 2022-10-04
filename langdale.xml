@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="langdale"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="langdale"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="langdale"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="langdale"
+           path="meta-openembedded"/>
+</manifest>
