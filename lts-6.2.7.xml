@@ -38,7 +38,7 @@
   </project>
   <project name="meta-boot2qt-ti"
            remote="qt"
-           revision="dev"
+           revision="153df7b3cca76517fd2935d008c7d8981fa20a90"
            upstream="dev"
            path="sources/meta-boot2qt-ti">
     <linkfile dest="sources/templates" src="conf"/>
