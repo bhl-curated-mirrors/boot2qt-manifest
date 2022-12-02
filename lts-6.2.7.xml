@@ -87,13 +87,13 @@
           fetch="git://git.toradex.com"/>
   <project name="meta-toradex-bsp-common"
            remote="toradex"
-           revision="4744d2e28fab596554a57aaa888485c20b204d29"
-           upstream="master"
+           revision="0a52bbb4b3759d21848330bac72f1b23ac9d6c7d"
+           upstream="kirkstone-6.x.y"
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
-           revision="97eebca39d33227e784020198908009f36f8cb93"
-           upstream="master"
+           revision="a80de26deaaf94fd735bf00ce724ed568f965b04"
+           upstream="kirkstone-6.x.y"
            path="sources/meta-toradex-nxp"/>
 
 </manifest>
