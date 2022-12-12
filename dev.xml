@@ -5,13 +5,13 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.4"
-           upstream="kirkstone"
+           revision="refs/tags/yocto-4.1.1"
+           upstream="langdale"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.4"
-           upstream="kirkstone"
+           revision="refs/tags/yocto-4.1.1"
+           upstream="langdale"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
@@ -19,8 +19,8 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="05dcac98473402d87e0af73bbc2c5a6a840abe93"
-           upstream="kirkstone"
+           revision="c5668905a6d8a78fb72c2cbf8b20e91e686ceb86"
+           upstream="langdale"
            path="sources/meta-openembedded"/>
 
   <!-- Qt -->
@@ -41,7 +41,7 @@
            revision="dev"
            upstream="dev"
            path="sources/meta-boot2qt-st">
-    <linkfile dest="sources/templates" src="conf"/>
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
   </project>
   <project name="meta-qt6"
            remote="qt"
@@ -54,7 +54,7 @@
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
            remote="stm"
-           revision="kirkstone"
-           upstream="kirkstone"
+           revision="0465817ff356c987f0a5749ac47792d049d76be3"
+           upstream="langdale"
            path="sources/meta-st-stm32mp"/>
 </manifest>
