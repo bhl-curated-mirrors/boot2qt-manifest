@@ -5,13 +5,13 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-4.1.1"
-           upstream="langdale"
+           revision="2c6f0b9228b47459dd1b67d578792cd017006128"
+           upstream="master"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-4.1.1"
-           upstream="langdale"
+           revision="1014352913133177996dae35966a131f5c56eec2"
+           upstream="master"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
@@ -19,8 +19,8 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="c5668905a6d8a78fb72c2cbf8b20e91e686ceb86"
-           upstream="langdale"
+           revision="84ffd15cd1f77da445c9900a2d08892cd58f3313"
+           upstream="master"
            path="sources/meta-openembedded"/>
 
   <!-- Qt -->
@@ -52,12 +52,12 @@
   <!-- Device specific layers -->
   <project name="meta-arm"
            remote="yocto"
-           revision="ff9b6f29bf4a6e3fcead5c1025a413cffee7bc53"
-           upstream="langdale"
+           revision="b061104c87ce58fcc1e9e4791a8339b7af583a09"
+           upstream="master"
            path="sources/meta-arm"/>
   <project name="meta-ti"
            remote="yocto"
-           revision="c023b50537fc513cbbc91b00ed0ead77fbac1070"
+           revision="54087fb0eaa9cd3086d07c21b30439fee7aa8410"
            upstream="master"
            path="sources/meta-ti"/>
 
