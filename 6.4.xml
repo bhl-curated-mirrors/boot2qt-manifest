@@ -54,8 +54,8 @@
           fetch="https://github.com/renesas-rcar"/>
   <project name="meta-renesas"
            remote="renesas"
-           upstream="kirkstone-dev"
            revision="7320fd6e4df8d622e741c923eb13c1c355a3972c"
+           upstream="kirkstone-dev"
            path="sources/meta-renesas"/>
 
   <!-- internal layer for the proprietary device drivers -->
