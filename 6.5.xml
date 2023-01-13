@@ -57,7 +57,7 @@
            path="sources/meta-arm"/>
   <project name="meta-ti"
            remote="yocto"
-           revision="c023b50537fc513cbbc91b00ed0ead77fbac1070"
+           revision="54087fb0eaa9cd3086d07c21b30439fee7aa8410"
            upstream="master"
            path="sources/meta-ti"/>
 
