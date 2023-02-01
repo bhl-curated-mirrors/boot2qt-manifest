@@ -54,7 +54,7 @@
           fetch="https://github.com/renesas-rcar"/>
   <project name="meta-renesas"
            remote="renesas"
-           revision="7320fd6e4df8d622e741c923eb13c1c355a3972c"
+           revision="644ccf213fed7be3cf68b2a7bd80ae32bcc8a3c8"
            upstream="kirkstone-dev"
            path="sources/meta-renesas"/>
 
