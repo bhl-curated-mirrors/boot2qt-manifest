@@ -17,4 +17,8 @@
            remote="oe"
            revision="langdale"
            path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="master"
+           path="meta-python2"/>
 </manifest>
