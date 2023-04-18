@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="2c6f0b9228b47459dd1b67d578792cd017006128"
+           upstream="master"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="1014352913133177996dae35966a131f5c56eec2"
+           upstream="master"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="84ffd15cd1f77da445c9900a2d08892cd58f3313"
+           upstream="master"
+           path="sources/meta-openembedded"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+  <project name="meta-boot2qt-ti"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-ti">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-qt6"/>
+
+  <!-- Device specific layers -->
+  <project name="meta-arm"
+           remote="yocto"
+           revision="b061104c87ce58fcc1e9e4791a8339b7af583a09"
+           upstream="master"
+           path="sources/meta-arm"/>
+  <project name="meta-ti"
+           remote="yocto"
+           revision="54087fb0eaa9cd3086d07c21b30439fee7aa8410"
+           upstream="master"
+           path="sources/meta-ti"/>
+
+</manifest>

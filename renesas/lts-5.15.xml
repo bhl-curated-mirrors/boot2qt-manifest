@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-3.1.23"
+           upstream="dunfell"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-3.1.23"
+           upstream="dunfell"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="87571345059f82fb7599e3aa82e6fdcfbd361098"
+           upstream="dunfell"
+           path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8"
+           upstream="dunfell"
+           path="sources/meta-python2"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="lts-5.15"
+           upstream="lts-5.15"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+  <project name="meta-boot2qt-renesas"
+           remote="qt"
+           revision="lts-5.15"
+           path="sources/meta-boot2qt-renesas">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+  <project name="meta-qt5"
+           remote="qt"
+           revision="lts-5.15"
+           upstream="lts-5.15"
+           path="sources/meta-qt5"/>
+
+  <!-- Device specific layers -->
+  <remote name="renesas"
+          fetch="https://github.com/renesas-rcar"/>
+  <project name="meta-renesas"
+           remote="renesas"
+           revision="64adc15c302f74303cb5599e249f4c7cac9def0c"
+           path="sources/meta-renesas"/>
+
+  <!-- internal layer for the proprietary device drivers -->
+  <remote name="playground"
+          fetch="ssh://git@git.qt.io/boot2qt"/>
+  <project name="renesas-rcar3"
+           remote="playground"
+           revision="79433791840724c3a47bc74ad6ae379e92d0a57a"
+           path="sources/renesas-rcar3"
+           groups="notdefault"/>
+</manifest>

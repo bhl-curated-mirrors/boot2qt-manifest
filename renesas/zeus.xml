@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="eac84e73e8d94610173c3bb3b6c6d74b58e44f60"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="756963cc28ebc163df7d7f4b4ee004c18d3d3260"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <remote name="oe-mirror"
+          fetch="https://github.com/openembedded"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="9e60d30669a2ad0598e9abf0cd15ee06b523986b"
+           path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"
+           path="sources/meta-python2"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="zeus"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+  <project name="meta-boot2qt-renesas"
+           remote="qt"
+           revision="zeus"
+           path="sources/meta-boot2qt-renesas">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+  <project name="meta-qt5"
+           remote="qt"
+           revision="5.15"
+           path="sources/meta-qt5"/>
+
+  <!-- Device specific layers -->
+  <remote name="renesas"
+          fetch="https://github.com/renesas-rcar"/>
+  <project name="meta-renesas"
+           remote="renesas"
+           revision="9a58b78a5c2960332b6ed4b02a6d8d5c606fa3e5"
+           path="sources/meta-renesas"/>
+
+  <!-- internal layer for the proprietary device drivers -->
+  <remote name="playground"
+          fetch="ssh://git@git.qt.io/boot2qt"/>
+  <project name="renesas-rcar3"
+           remote="playground"
+           revision="9018f7478a0a6646a61e8ee5cad8811fbc3ea927"
+           path="sources/renesas-rcar3"
+           groups="notdefault"/>
+</manifest>

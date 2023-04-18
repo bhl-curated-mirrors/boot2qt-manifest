@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="d88d62c20d7d8da85f02edb170dae0280624ad7e"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="756963cc28ebc163df7d7f4b4ee004c18d3d3260"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <remote name="oe-mirror"
+          fetch="https://github.com/openembedded"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="2b5dd1eb81cd08bc065bc76125f2856e9383e98b"
+           path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="4400f9155ec193d028208cf0c66aeed2ba2b00ab"
+           path="sources/meta-python2"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="c65648e1dc6e4f2a5e70fe4b1856f839b680831a"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+  <project name="meta-boot2qt-st"
+           remote="qt"
+           revision="ff91c350558604a65a77b28e5bbb3fd2bd4a8113"
+           path="sources/meta-boot2qt-st">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+  <project name="meta-qt5"
+           remote="qt"
+           revision="d2d19ea06898bf22944c533f483cc63cf79ca2fe"
+           path="sources/meta-qt5"/>
+
+  <!-- ST -->
+  <remote name="stm"
+          fetch="https://github.com/STMicroelectronics/"/>
+  <project name="meta-st-stm32mp"
+           remote="stm"
+           revision="0660d5d265fbafde714cc8f46775ba725a3e0234"
+           path="sources/meta-stm32mp"/>
+  <project name="meta-st-openstlinux"
+           remote="stm"
+           revision="9160c08dfcd0b7ec0eb8f1fd96672695b09680d5"
+           path="sources/meta-st-openstlinux"/>
+</manifest>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.5"
+           upstream="kirkstone"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.5"
+           upstream="kirkstone"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="50d4a8d2a983a68383ef1ffec2c8e21adf0c1a79"
+           upstream="kirkstone"
+           path="sources/meta-openembedded"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="refs/tags/v6.4.2"
+           upstream="6.4.2"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+  <project name="meta-boot2qt-st"
+           remote="qt"
+           revision="f204d82390dc41e23e54f29c6ca7caebfad16e4e"
+           upstream="dev"
+           path="sources/meta-boot2qt-st">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="refs/tags/v6.4.2"
+           upstream="6.4.2"
+           path="sources/meta-qt6"/>
+
+  <!-- ST -->
+  <remote name="stm"
+          fetch="https://github.com/STMicroelectronics/"/>
+  <project name="meta-st-stm32mp"
+           remote="stm"
+           revision="ca501bd7dbe023682903ceedddaacd940b0898f4"
+           upstream="kirkstone"
+           path="sources/meta-st-stm32mp"/>
+</manifest>
