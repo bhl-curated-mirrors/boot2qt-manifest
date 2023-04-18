@@ -1,41 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Yocto -->
-  <remote name="yocto"
-          fetch="git://git.yoctoproject.org"/>
-  <project name="poky"
-           remote="yocto"
-           revision="refs/tags/yocto-4.0.6"
-           upstream="kirkstone"
-           path="sources/poky"/>
-  <project name="meta-mingw"
-           remote="yocto"
-           revision="refs/tags/yocto-4.0.6"
-           upstream="kirkstone"
-           path="sources/meta-mingw"/>
+  <include name="base/kirkstone.xml"/>
 
-  <!-- OpenEmbedded -->
-  <remote name="oe"
-          fetch="git://git.openembedded.org"/>
-  <project name="meta-openembedded"
-           remote="oe"
-           revision="a8055484f2829e8dfd03d5c8520b2c611aa7ebd2"
-           upstream="kirkstone"
-           path="sources/meta-openembedded"/>
-
-  <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
-  <project name="meta-boot2qt"
-           remote="qt"
-           revision="6.4"
-           upstream="6.4"
-           path="sources/meta-boot2qt">
-    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-  </project>
+  <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-renesas"
            remote="qt"
            revision="dev"
@@ -43,11 +10,8 @@
            path="sources/meta-boot2qt-renesas">
     <linkfile dest="sources/templates" src="conf"/>
   </project>
-  <project name="meta-qt6"
-           remote="qt"
-           revision="dev"
-           upstream="dev"
-           path="sources/meta-qt6"/>
+
+  <include name="qt/dev.xml"/>
 
   <!-- Device specific layers -->
   <remote name="renesas"

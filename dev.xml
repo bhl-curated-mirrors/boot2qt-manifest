@@ -1,47 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Yocto -->
-  <remote name="yocto"
-          fetch="git://git.yoctoproject.org"/>
-  <project name="poky"
-           remote="yocto"
-           revision="refs/tags/4.2_M3"
-           upstream="master"
-           path="sources/poky"/>
-  <project name="meta-mingw"
-           remote="yocto"
-           revision="refs/tags/4.2_M3"
-           upstream="master"
-           path="sources/meta-mingw"/>
+  <include name="base/master.xml"/>
 
-  <!-- OpenEmbedded -->
-  <remote name="oe"
-          fetch="git://git.openembedded.org"/>
-  <project name="meta-openembedded"
-           remote="oe"
-           revision="eb0d072f9ecfa175c79b781fc62265914abeb94e"
-           upstream="master"
-           path="sources/meta-openembedded"/>
-
-  <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
-  <project name="meta-boot2qt"
-           remote="qt"
-           revision="dev"
-           upstream="dev"
-           path="sources/meta-boot2qt">
-    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf/templates/default"/>
-  </project>
-  <project name="meta-qt6"
-           remote="qt"
-           revision="dev"
-           upstream="dev"
-           path="sources/meta-qt6"/>
+  <include name="qt/dev.xml"/>
 
   <!-- NXP -->
   <remote name="freescale"
@@ -95,5 +56,4 @@
            revision="8961740c789241b1325138fb1434adda6b649512"
            upstream="master"
            path="sources/meta-toradex-nxp"/>
-
 </manifest>

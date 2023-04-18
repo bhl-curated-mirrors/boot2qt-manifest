@@ -1,41 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Yocto -->
-  <remote name="yocto"
-          fetch="git://git.yoctoproject.org"/>
-  <project name="poky"
-           remote="yocto"
-           revision="refs/tags/yocto-4.1.3"
-           upstream="langdale"
-           path="sources/poky"/>
-  <project name="meta-mingw"
-           remote="yocto"
-           revision="refs/tags/yocto-4.1.3"
-           upstream="langdale"
-           path="sources/meta-mingw"/>
+  <include name="base/langdale.xml"/>
 
-  <!-- OpenEmbedded -->
-  <remote name="oe"
-          fetch="git://git.openembedded.org"/>
-  <project name="meta-openembedded"
-           remote="oe"
-           revision="3f9340a9241d497753b330d90d6a3d8332c1ba7f"
-           upstream="langdale"
-           path="sources/meta-openembedded"/>
-
-  <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
-  <project name="meta-boot2qt"
-           remote="qt"
-           revision="6.5"
-           upstream="6.5"
-           path="sources/meta-boot2qt">
-    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-  </project>
+  <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-st"
            remote="qt"
            revision="dev"
@@ -43,13 +10,10 @@
            path="sources/meta-boot2qt-st">
     <linkfile dest="sources/templates" src="conf/templates/default"/>
   </project>
-  <project name="meta-qt6"
-           remote="qt"
-           revision="6.5"
-           upstream="6.5"
-           path="sources/meta-qt6"/>
 
-  <!-- ST -->
+  <include name="qt/6.5.xml"/>
+
+  <!-- Device specific layers -->
   <remote name="stm"
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
