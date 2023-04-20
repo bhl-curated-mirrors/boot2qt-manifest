@@ -14,7 +14,7 @@
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision="5977197340c7a7db17fe3e02a4e014ad997565ae"
+           revision="2c48a30847dc0f4a3a1505c462387578ea49065f"
            upstream="kirkstone"
            path="sources/meta-freescale-3rdparty"/>
 
