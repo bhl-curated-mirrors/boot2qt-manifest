@@ -31,8 +31,8 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="6.4"
-           upstream="6.4"
+           revision="kirkstone"
+           upstream="kirkstone"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
     <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
