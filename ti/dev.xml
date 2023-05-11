@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/master.xml"/>
+  <include name="base/mickledore.xml"/>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-ti"
