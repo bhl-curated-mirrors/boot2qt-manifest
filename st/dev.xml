@@ -18,7 +18,7 @@
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
            remote="stm"
-           revision="0465817ff356c987f0a5749ac47792d049d76be3"
-           upstream="langdale"
+           revision="15bcb4b80b3eddf41490baa94c3b8d74bea02133"
+           upstream="mickledore"
            path="sources/meta-st-stm32mp"/>
 </manifest>
