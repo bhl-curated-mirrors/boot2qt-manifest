@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/mickledore.xml"/>
+  <include name="base/kirkstone.xml"/>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-st"
            remote="qt"
-           revision="dev"
+           revision="f204d82390dc41e23e54f29c6ca7caebfad16e4e"
            upstream="dev"
            path="sources/meta-boot2qt-st">
-    <linkfile dest="sources/templates" src="conf/templates/default"/>
+    <linkfile dest="sources/templates" src="conf"/>
   </project>
 
   <include name="qt/dev.xml"/>
@@ -18,7 +18,7 @@
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
            remote="stm"
-           revision="15bcb4b80b3eddf41490baa94c3b8d74bea02133"
-           upstream="mickledore"
+           revision="kirkstone"
+           upstream="kirkstone"
            path="sources/meta-st-stm32mp"/>
 </manifest>
