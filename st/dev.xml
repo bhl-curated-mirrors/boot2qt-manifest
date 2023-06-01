@@ -5,10 +5,10 @@
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-st"
            remote="qt"
-           revision="f204d82390dc41e23e54f29c6ca7caebfad16e4e"
+           revision="dev"
            upstream="dev"
            path="sources/meta-boot2qt-st">
-    <linkfile dest="sources/templates" src="conf"/>
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
   </project>
 
   <include name="qt/dev.xml"/>
