@@ -16,12 +16,12 @@
   <!-- Device specific layers -->
   <project name="meta-arm"
            remote="yocto"
-           revision="ff9b6f29bf4a6e3fcead5c1025a413cffee7bc53"
+           revision="58952aa7ba86567e3867df66ce3392dd67988ca7"
            upstream="langdale"
            path="sources/meta-arm"/>
   <project name="meta-ti"
            remote="yocto"
-           revision="54087fb0eaa9cd3086d07c21b30439fee7aa8410"
+           revision="8fa9ec7dcd2e816cee18aaf7e8947b3eaee9923c"
            upstream="master"
            path="sources/meta-ti"/>
 
