@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/kirkstone.xml"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-st"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-st">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <include name="qt/6.6.xml"/>
+
+  <!-- Device specific layers -->
+  <remote name="stm"
+          fetch="https://github.com/STMicroelectronics/"/>
+  <project name="meta-st-stm32mp"
+           remote="stm"
+           revision="kirkstone"
+           upstream="kirkstone"
+           path="sources/meta-st-stm32mp"/>
+</manifest>

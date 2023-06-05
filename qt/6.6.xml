@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Qt -->
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.6"
+           upstream="6.6"
+           path="sources/meta-qt6"/>
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/mickledore.xml"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-ti"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-ti">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <include name="qt/6.6.xml"/>
+
+  <!-- Device specific layers -->
+  <project name="meta-arm"
+           remote="yocto"
+           revision="68509775774d9cf304e2b422927f2a9636525155"
+           upstream="mickledore"
+           path="sources/meta-arm"/>
+  <project name="meta-ti"
+           remote="yocto"
+           revision="b04409dcc386041822cb4f040dba70646e314553"
+           upstream="master"
+           path="sources/meta-ti"/>
+</manifest>
