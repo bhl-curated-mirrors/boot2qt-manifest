@@ -45,20 +45,20 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="20c1612e983ae07a274a1deb36d347a98976ccf5"
+           revision="adf69723cf24f81697aa363a093e939f642e60ab"
            upstream="master"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision="48cc5dd42007d09295677bc8bc0377fe96b5b270"
+           revision="3f039834ad1b701b9b2c57e9df7fffa1e0b42c71"
            upstream="master"
            path="sources/meta-freescale-3rdparty"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="bf948e0aa87ee0c10bdf85f99b2632915e6d2039"
-           upstream="master"
+           revision="6f5771d2bcfbfb8f8ce17b455c29a5703f2027c9"
+           upstream="langdale"
            path="sources/meta-raspberrypi"/>
 
   <!-- Intel -->
@@ -66,8 +66,8 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="6f552203593e8b305460eeb7551f6a3428e3fa67"
-           upstream="master"
+           revision="13a03c109aecfe275e7539b74c1ab94db9688d9b"
+           upstream="langdale"
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
@@ -75,7 +75,7 @@
           fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="7b0be97e99b1c7d4ada814e6cbcd2aee75f633b4"
-           upstream="mickledore"
+           revision="8e2fc6b47c74b05de37528274dc61aac1a5035cf"
+           upstream="langdale"
            path="sources/meta-tegra"/>
 </manifest>
