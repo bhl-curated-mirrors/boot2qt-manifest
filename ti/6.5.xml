@@ -5,7 +5,7 @@
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-ti"
            remote="qt"
-           revision="61281ca4cd59f3daeb8850c1421f4a1414159e30"
+           revision="dev"
            upstream="dev"
            path="sources/meta-boot2qt-ti">
     <linkfile dest="sources/templates" src="conf/templates/default"/>
@@ -21,7 +21,7 @@
            path="sources/meta-arm"/>
   <project name="meta-ti"
            remote="yocto"
-           revision="8fa9ec7dcd2e816cee18aaf7e8947b3eaee9923c"
+           revision="b04409dcc386041822cb4f040dba70646e314553"
            upstream="master"
            path="sources/meta-ti"/>
 
