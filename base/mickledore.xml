@@ -12,7 +12,7 @@
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-4.2.1"
+           revision="4608d0bb7e47c52b8f6e9be259bfb1716fda9fd6"
            upstream="mickledore"
            path="sources/meta-mingw"/>
 
