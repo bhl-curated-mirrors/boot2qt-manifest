@@ -31,21 +31,21 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="lts-6.2.8"
+           revision="refs/tags/v6.2.8-lts"
            upstream="lts-6.2.8"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
   </project>
   <project name="meta-boot2qt-renesas"
            remote="qt"
-           revision="dev"
+           revision="3b83bf6e5226359cfb29d10bf61b2bcdcac088a3"
            upstream="dev"
            path="sources/meta-boot2qt-renesas">
     <linkfile dest="sources/templates" src="conf"/>
   </project>
   <project name="meta-qt6"
            remote="qt"
-           revision="lts-6.2.8"
+           revision="refs/tags/v6.2.8-lts"
            upstream="lts-6.2.8"
            path="sources/meta-qt6"/>
 
