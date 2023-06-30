@@ -61,7 +61,7 @@
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
            remote="stm"
-           revision="kirkstone"
+           revision="ca501bd7dbe023682903ceedddaacd940b0898f4"
            upstream="kirkstone"
            path="sources/meta-st-stm32mp"/>
 

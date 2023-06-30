@@ -54,31 +54,6 @@
            upstream="kirkstone"
            path="sources/meta-freescale-3rdparty"/>
 
-  <!-- Raspberry Pi -->
-  <project name="meta-raspberrypi"
-           remote="yocto"
-           revision="dacad9302a92b0b7edf8546cdcad1f8ef753e462"
-           upstream="kirkstone"
-           path="sources/meta-raspberrypi"/>
-
-  <!-- Intel -->
-  <remote name="intel"
-          fetch="git://git.yoctoproject.org"/>
-  <project name="meta-intel"
-           remote="intel"
-           revision="4c6cc14669d0e9de36e1a050ce4084ca14181722"
-           upstream="kirkstone"
-           path="sources/meta-intel"/>
-
-  <!-- NVIDIA -->
-  <remote name="OE4T"
-          fetch="https://github.com/OE4T"/>
-  <project name="meta-tegra"
-           remote="OE4T"
-           revision="583f839ccf2c7b8e90dbf74975399c92551747b2"
-           upstream="kirkstone-l4t-r32.7.x"
-           path="sources/meta-tegra"/>
-
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-toradex"
            remote="qt"

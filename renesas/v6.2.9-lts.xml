@@ -43,7 +43,7 @@
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-renesas"
            remote="qt"
-           revision="dev"
+           revision="19bdb4771affb6945c162e9b23c3b837b2269387"
            upstream="dev"
            path="sources/meta-boot2qt-renesas">
     <linkfile dest="sources/templates" src="conf"/>
