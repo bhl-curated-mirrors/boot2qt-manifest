@@ -51,7 +51,7 @@
   <!-- Qt -->
   <project name="meta-qt6"
            remote="qt"
-           revision="6.5.2"
+           revision="refs/tags/v6.5.2"
            upstream="6.5.2"
            path="sources/meta-qt6"/>
 
