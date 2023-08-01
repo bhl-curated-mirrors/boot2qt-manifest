@@ -33,7 +33,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="lts-6.2.9"
+           revision="refs/tags/v6.2.9-lts"
            upstream="lts-6.2.9"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -57,7 +57,7 @@
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-toradex"
            remote="qt"
-           revision="dev"
+           revision="d3c0002d6a7a1681381ce568bdcc44fe5ced77d9"
            upstream="dev"
            path="sources/meta-boot2qt-toradex">
     <linkfile dest="sources/templates" src="conf"/>
@@ -66,7 +66,7 @@
   <!-- Qt -->
   <project name="meta-qt6"
            remote="qt"
-           revision="lts-6.2.9"
+           revision="refs/tags/v6.2.9-lts"
            upstream="lts-6.2.9"
            path="sources/meta-qt6"/>
 
