@@ -5,7 +5,7 @@
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-st"
            remote="qt"
-           revision="dev"
+           revision="3b983f06989b49fa7a90133659939401bf2f5486"
            upstream="dev"
            path="sources/meta-boot2qt-st">
     <linkfile dest="sources/templates" src="conf/templates/default"/>
@@ -18,7 +18,7 @@
           fetch="https://github.com/STMicroelectronics/"/>
   <project name="meta-st-stm32mp"
            remote="stm"
-           revision="kirkstone"
+           revision="efe2f89975c08f94c7674f9f83a115a372ab97b1"
            upstream="kirkstone"
            path="sources/meta-st-stm32mp"/>
 </manifest>
