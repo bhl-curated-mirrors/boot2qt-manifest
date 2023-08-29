@@ -53,7 +53,7 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="e353e020f161d6674c825e8abc9bdcece71ca8a5"
+           revision="f66fdef1c2dc735690a7ec7dd44a534d69ea3918"
            upstream="dunfell"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
