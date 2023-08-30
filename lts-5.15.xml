@@ -105,7 +105,7 @@
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
-           revision="b288744310a77181db0fde2bee5d86e7d890f28b"
+           revision="0edc8b2befd58e83ecd7741d000c84ecd7f42f7e"
            upstream="dunfell-5.x.y"
            path="sources/meta-toradex-nxp"/>
 
