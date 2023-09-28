@@ -33,7 +33,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="langdale"
+           revision="e9bc57eed9936a41b4c6ab1557c038c7d31b1080"
            upstream="langdale"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -79,32 +79,10 @@
            upstream="langdale"
            path="sources/meta-tegra"/>
 
-  <!-- Boot to Qt vendor layer -->
-  <project name="meta-boot2qt-ti"
-           remote="qt"
-           revision="dev"
-           upstream="dev"
-           path="sources/meta-boot2qt-ti">
-    <linkfile dest="sources/templates" src="conf/templates/default"/>
-  </project>
-
   <!-- Qt -->
   <project name="meta-qt6"
            remote="qt"
-           revision="6.5.3"
+           revision="refs/tags/v6.5.3"
            upstream="6.5.3"
            path="sources/meta-qt6"/>
-
-  <!-- Device specific layers -->
-  <project name="meta-arm"
-           remote="yocto"
-           revision="58952aa7ba86567e3867df66ce3392dd67988ca7"
-           upstream="langdale"
-           path="sources/meta-arm"/>
-  <project name="meta-ti"
-           remote="yocto"
-           revision="b04409dcc386041822cb4f040dba70646e314553"
-           upstream="master"
-           path="sources/meta-ti"/>
-
 </manifest>
