@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/langdale.xml"/>
+  <include name="base/mickledore.xml"/>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-ti"
@@ -16,13 +16,12 @@
   <!-- Device specific layers -->
   <project name="meta-arm"
            remote="yocto"
-           revision="58952aa7ba86567e3867df66ce3392dd67988ca7"
-           upstream="langdale"
+           revision="68509775774d9cf304e2b422927f2a9636525155"
+           upstream="mickledore"
            path="sources/meta-arm"/>
   <project name="meta-ti"
            remote="yocto"
            revision="b04409dcc386041822cb4f040dba70646e314553"
            upstream="master"
            path="sources/meta-ti"/>
-
 </manifest>

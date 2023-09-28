@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/langdale.xml"/>
+  <include name="base/mickledore.xml"/>
 
   <include name="qt/6.5.xml"/>
 </manifest>
