@@ -33,7 +33,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="kirkstone"
+           revision="42742168fe6eb19f221c9688b2bd2575896ae8b4"
            upstream="kirkstone"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -54,54 +54,34 @@
            upstream="kirkstone"
            path="sources/meta-freescale-3rdparty"/>
 
-  <!-- Raspberry Pi -->
-  <project name="meta-raspberrypi"
-           remote="yocto"
-           revision="80a12f7fddfeae28c43242765374e7ade3a2a59e"
-           upstream="kirkstone"
-           path="sources/meta-raspberrypi"/>
-
-  <!-- Intel -->
-  <remote name="intel"
-          fetch="git://git.yoctoproject.org"/>
-  <project name="meta-intel"
-           remote="intel"
-           revision="1342bcdc5bfc6620737e7d195e7d9bd744348577"
-           upstream="kirkstone"
-           path="sources/meta-intel"/>
-
-  <!-- NVIDIA -->
-  <remote name="OE4T"
-          fetch="https://github.com/OE4T"/>
-  <project name="meta-tegra"
-           remote="OE4T"
-           revision="9401c5a564d48f1f1f649f06f15702cd36814192"
-           upstream="kirkstone-l4t-r32.7.x"
-           path="sources/meta-tegra"/>
-
   <!-- Boot to Qt vendor layer -->
-  <project name="meta-boot2qt-st"
+  <project name="meta-boot2qt-toradex"
            remote="qt"
-           revision="dev"
+           revision="d3c0002d6a7a1681381ce568bdcc44fe5ced77d9"
            upstream="dev"
-           path="sources/meta-boot2qt-st">
-    <linkfile dest="sources/templates" src="conf/templates/default"/>
+           path="sources/meta-boot2qt-toradex">
+    <linkfile dest="sources/templates" src="conf"/>
   </project>
 
   <!-- Qt -->
   <project name="meta-qt6"
            remote="qt"
-           revision="lts-6.2.10"
+           revision="refs/tags/v6.2.10-lts"
            upstream="lts-6.2.10"
            path="sources/meta-qt6"/>
 
-  <!-- Device specific layers -->
-  <remote name="stm"
-          fetch="https://github.com/STMicroelectronics/"/>
-  <project name="meta-st-stm32mp"
-           remote="stm"
-           revision="kirkstone"
-           upstream="kirkstone"
-           path="sources/meta-st-stm32mp"/>
+  <!-- Toradex -->
+  <remote name="toradex"
+          fetch="git://git.toradex.com"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="f7ff10a3b560dcf4e258115da679d1f864e09837"
+           upstream="kirkstone-6.x.y"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="e99f1d4656f9d80b9991728e12b8f7f27bf325d9"
+           upstream="kirkstone-6.x.y"
+           path="sources/meta-toradex-nxp"/>
 
 </manifest>

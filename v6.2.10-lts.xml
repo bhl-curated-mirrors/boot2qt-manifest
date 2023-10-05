@@ -33,7 +33,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="kirkstone"
+           revision="42742168fe6eb19f221c9688b2bd2575896ae8b4"
            upstream="kirkstone"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -79,34 +79,10 @@
            upstream="kirkstone-l4t-r32.7.x"
            path="sources/meta-tegra"/>
 
-  <!-- Boot to Qt vendor layer -->
-  <project name="meta-boot2qt-toradex"
-           remote="qt"
-           revision="dev"
-           upstream="dev"
-           path="sources/meta-boot2qt-toradex">
-    <linkfile dest="sources/templates" src="conf"/>
-  </project>
-
   <!-- Qt -->
   <project name="meta-qt6"
            remote="qt"
-           revision="lts-6.2.10"
+           revision="refs/tags/v6.2.10-lts"
            upstream="lts-6.2.10"
            path="sources/meta-qt6"/>
-
-  <!-- Toradex -->
-  <remote name="toradex"
-          fetch="git://git.toradex.com"/>
-  <project name="meta-toradex-bsp-common"
-           remote="toradex"
-           revision="f7ff10a3b560dcf4e258115da679d1f864e09837"
-           upstream="kirkstone-6.x.y"
-           path="sources/meta-toradex-bsp-common"/>
-  <project name="meta-toradex-nxp"
-           remote="toradex"
-           revision="e99f1d4656f9d80b9991728e12b8f7f27bf325d9"
-           upstream="kirkstone-6.x.y"
-           path="sources/meta-toradex-nxp"/>
-
 </manifest>
