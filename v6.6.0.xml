@@ -82,7 +82,7 @@
   <!-- Qt -->
   <project name="meta-qt6"
            remote="qt"
-           revision="6.6.0"
+           revision="refs/tags/v6.6.0"
            upstream="6.6.0"
            path="sources/meta-qt6"/>
 </manifest>
