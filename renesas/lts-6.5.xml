@@ -11,7 +11,7 @@
     <linkfile dest="sources/templates" src="conf"/>
   </project>
 
-  <include name="qt/6.5.xml"/>
+  <include name="qt/lts-6.5.xml"/>
 
   <!-- Device specific layers -->
   <remote name="renesas"
