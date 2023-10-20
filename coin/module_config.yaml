@@ -1,0 +1,59 @@
+version: 2
+tags: ["git"]
+accept_configuration:
+  condition: property
+  property: target.arch
+  in_values: [TARGET1]
+
+instructions:
+  Build:
+  - type: EnvironmentVariable
+    variableName: SOURCE_DIR
+    variableValue: "{{.SourceDir}}"
+  - type: SetBuildDirectory
+    directory: "{{.AgentWorkingDir}}/build"
+  - type: MakeDirectory
+    directory: "{{.BuildDir}}"
+  - type: ChangeDirectory
+    directory: "{{.BuildDir}}"
+  - type: WriteFile
+    fileContents: |
+      #!/bin/bash -e
+
+      curl https://storage.googleapis.com/git-repo-downloads/repo > repo
+      chmod +x repo
+
+      git -C ${SOURCE_DIR} branch test
+      git -C ${SOURCE_DIR} remote set-url origin git://code.qt.io/yocto/boot2qt-manifest
+      git -C ${SOURCE_DIR} fetch --unshallow origin
+
+      MANIFESTS=$(git -C ${SOURCE_DIR} diff --name-only --diff-filter=d origin/master | grep \.xml$ || true)
+
+      echo "Changed manifests: ${MANIFESTS}"
+
+      for MANIFEST in ${MANIFESTS}; do
+        echo Testing ${MANIFEST}
+        ./repo init \
+          --repo-url https://github.com/theqtcompany/git-repo \
+          -u ${SOURCE_DIR} \
+          -b test \
+          -m ${MANIFEST}
+        ./repo sync -d
+      done
+
+      MANIFESTS=$(git -C ${SOURCE_DIR} diff --name-only --diff-filter=D origin/master | grep \.xml$ || true)
+
+      echo "Deleted manifests: ${MANIFESTS}"
+      for MANIFEST in ${MANIFESTS}; do
+        if git -C ${SOURCE_DIR} grep ${MANIFEST} ; then false ; else true ; fi
+      done
+
+    filename: "{{.BuildDir}}/start-build"
+    fileMode: 420
+  - type: ExecuteCommand
+    command: ["bash", "-e", "{{.BuildDir}}/start-build"]
+    maxTimeInSeconds: 3600
+    maxTimeBetweenOutput: 600
+    userMessageOnFailure: "Build failed."
+
+  Test: []
