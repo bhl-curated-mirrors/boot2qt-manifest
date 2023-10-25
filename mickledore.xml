@@ -21,4 +21,10 @@
            remote="oe"
            revision="master"
            path="meta-python2"/>
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="mickledore"
+           path="meta-clang"/>
 </manifest>
