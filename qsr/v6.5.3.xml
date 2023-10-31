@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="v6.5.3.xml"/>
+
+  <remote name="qsr"
+          fetch="ssh://codereview.qt-project.org/tqtc-boot2qt"
+          pushurl="ssh://codereview.qt-project.org/tqtc-boot2qt"/>
+  <project name="meta-qsr"
+           remote="qsr"
+           revision="6.5"
+           upstream="6.5"
+           path="sources/meta-qsr"/>
+</manifest>
