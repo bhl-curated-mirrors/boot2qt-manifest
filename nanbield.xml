@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="nanbield"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="nanbield"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="nanbield"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="045e7df0f47b0abf4648748fc679e8daac648490"
+           path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="master"
+           path="meta-python2"/>
+</manifest>
