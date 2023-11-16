@@ -7,12 +7,12 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.13"
+           revision="refs/tags/yocto-4.0.14"
            upstream="kirkstone"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.13"
+           revision="refs/tags/yocto-4.0.14"
            upstream="kirkstone"
            path="sources/meta-mingw"/>
 
@@ -21,7 +21,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="9c5541f7e18a1fac3b8dea71e1ebb8398d58e6ff"
+           revision="7da6cb848bc42b3e6bd5d2b37b52ba75510a6ca0"
            upstream="kirkstone"
            path="sources/meta-openembedded"/>
 
@@ -57,7 +57,7 @@
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="80a12f7fddfeae28c43242765374e7ade3a2a59e"
+           revision="59a6a1b5dd1e21189adec49c61eae04ed3e70338"
            upstream="kirkstone"
            path="sources/meta-raspberrypi"/>
 
@@ -66,7 +66,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="1342bcdc5bfc6620737e7d195e7d9bd744348577"
+           revision="3f0115e9e59f94af54b74838f4f33339ea7584ae"
            upstream="kirkstone"
            path="sources/meta-intel"/>
 
@@ -75,7 +75,7 @@
           fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="9401c5a564d48f1f1f649f06f15702cd36814192"
+           revision="86c19e0d8b795898cf582e04bdf072af4e5b28d8"
            upstream="kirkstone-l4t-r32.7.x"
            path="sources/meta-tegra"/>
 </manifest>
