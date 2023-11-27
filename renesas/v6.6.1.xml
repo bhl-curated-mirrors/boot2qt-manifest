@@ -33,31 +33,25 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="kirkstone"
+           revision="f7eba7422b1119af79d86a74dc03e7b623abb7aa"
            upstream="kirkstone"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
   </project>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-renesas"
            remote="qt"
-           revision="dev"
+           revision="49ad45f61fc35396d05b55884c6aade582d96078"
            upstream="dev"
            path="sources/meta-boot2qt-renesas">
     <linkfile dest="sources/templates" src="conf"/>
   </project>
 
   <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-qt6"
            remote="qt"
-           revision="6.6.1"
+           revision="refs/tags/v6.6.1"
            upstream="6.6.1"
            path="sources/meta-qt6"/>
 
