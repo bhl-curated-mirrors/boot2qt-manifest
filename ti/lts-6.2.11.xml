@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="kirkstone"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.14"
+           upstream="kirkstone"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.14"
+           upstream="kirkstone"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="7da6cb848bc42b3e6bd5d2b37b52ba75510a6ca0"
+           upstream="kirkstone"
+           path="sources/meta-openembedded"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="kirkstone"
+           upstream="kirkstone"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-ti"
+           remote="qt"
+           revision="153df7b3cca76517fd2935d008c7d8981fa20a90"
+           upstream="dev"
+           path="sources/meta-boot2qt-ti">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+
+  <!-- Qt -->
+  <project name="meta-qt6"
+           remote="qt"
+           revision="lts-6.2.11"
+           upstream="lts-6.2.11"
+           path="sources/meta-qt6"/>
+
+  <!-- Device specific layers -->
+  <project name="meta-arm"
+           remote="yocto"
+           revision="96aad3b29aa7a5ee4df5cf617a6336e5218fa9bd"
+           upstream="kirkstone"
+           path="sources/meta-arm"/>
+  <project name="meta-ti"
+           remote="yocto"
+           revision="1743b0101984094cb74fed9105afd59de110a044"
+           upstream="kirkstone"
+           path="sources/meta-ti"/>
+
+</manifest>

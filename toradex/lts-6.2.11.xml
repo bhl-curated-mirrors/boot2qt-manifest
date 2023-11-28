@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="kirkstone"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.14"
+           upstream="kirkstone"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.14"
+           upstream="kirkstone"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="7da6cb848bc42b3e6bd5d2b37b52ba75510a6ca0"
+           upstream="kirkstone"
+           path="sources/meta-openembedded"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="kirkstone"
+           upstream="kirkstone"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="7625e33cd7fd752ee04c7b9b5ba38b73961979ad"
+           upstream="kirkstone"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="1a6ea560015ecda5fff8eccaf5b1327f1bb6c57f"
+           upstream="kirkstone"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-toradex"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-toradex">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+
+  <!-- Qt -->
+  <project name="meta-qt6"
+           remote="qt"
+           revision="lts-6.2.11"
+           upstream="lts-6.2.11"
+           path="sources/meta-qt6"/>
+
+  <!-- Toradex -->
+  <remote name="toradex"
+          fetch="git://git.toradex.com"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="83127210d5b768699d2345fc7f9f6eb41bf60026"
+           upstream="kirkstone-6.x.y"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="8959d1c484340f157137761408ed3377e60674d6"
+           upstream="kirkstone-6.x.y"
+           path="sources/meta-toradex-nxp"/>
+
+</manifest>
