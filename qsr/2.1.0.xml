@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="v6.5.3.xml"/>
+  <include name="lts-6.5.4.xml"/>
 
   <remote name="qsr"
           fetch="ssh://codereview.qt-project.org/tqtc-boot2qt"
           pushurl="ssh://codereview.qt-project.org/tqtc-boot2qt"/>
   <project name="meta-qsr"
            remote="qsr"
-           revision="6.5"
-           upstream="6.5"
+           revision="6.5.4"
+           upstream="6.5.4"
            path="sources/meta-qsr"/>
 </manifest>
