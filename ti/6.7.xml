@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/nanbield.xml"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-ti"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-ti">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <include name="qt/6.7.xml"/>
+
+  <!-- Device specific layers -->
+  <project name="meta-arm"
+           remote="yocto"
+           revision="0bd7fece412f2e83876ebedf814661915e17bac4"
+           upstream="nanbield"
+           path="sources/meta-arm"/>
+  <project name="meta-ti"
+           remote="yocto"
+           revision="d3bcad2cbe63d4e1cd2b4e4418d0b3b9c1f864ed"
+           upstream="master"
+           path="sources/meta-ti"/>
+</manifest>
