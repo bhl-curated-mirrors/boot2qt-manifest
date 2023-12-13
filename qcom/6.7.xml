@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/nanbield.xml"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-qcom"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-qcom">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <include name="qt/6.7.xml"/>
+
+  <!-- Device specific layers -->
+  <remote name="linaro"
+          fetch="https://github.com/Linaro"/>
+  <project name="meta-qcom"
+           remote="linaro"
+           revision="e94335431ac0f6c37cd5edd3bdfc954adb79894d"
+           upstream="master"
+           path="sources/meta-qcom"/>
+</manifest>
