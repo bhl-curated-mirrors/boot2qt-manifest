@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/nanbield.xml"/>
+  <include name="base/master.xml"/>
 
   <include name="qt/dev.xml"/>
 </manifest>
