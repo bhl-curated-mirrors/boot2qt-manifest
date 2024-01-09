@@ -5,12 +5,12 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.28"
+           revision="refs/tags/yocto-3.1.30"
            upstream="dunfell"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.28"
+           revision="refs/tags/yocto-3.1.30"
            upstream="dunfell"
            path="sources/meta-mingw"/>
 
@@ -19,7 +19,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="0f10a0d394ddffeeb1db0ea94046d86792d704fe"
+           revision="fc632d5bb0936e91e4e0191547b9aa8ca47b4ffe"
            upstream="dunfell"
            path="sources/meta-openembedded"/>
   <project name="meta-python2"
@@ -53,12 +53,12 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="f66fdef1c2dc735690a7ec7dd44a534d69ea3918"
+           revision="501032fb30abbad54616a2d9bb4555c297fc35b6"
            upstream="dunfell"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision="4c0a166fa2809f74c93bd4c56d9a0f7ccb7818c8"
+           revision="5ae8890c1a64271636bcd7773996bddd51e700d8"
            upstream="dunfell"
            path="sources/meta-freescale-3rdparty"/>
 
@@ -100,12 +100,12 @@
           fetch="git://git.toradex.com"/>
   <project name="meta-toradex-bsp-common"
            remote="toradex"
-           revision="ea047be150a35d5c9be5617f132c9c0dbf7c249b"
+           revision="6b365ba003af2709c03fe2bf38ca7059413562a2"
            upstream="dunfell-5.x.y"
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
-           revision="8797f291ca2d9c8e0b2efedf37bf3bd10709ee81"
+           revision="87d0c6324ff016060a628d981eb5378229fd3956"
            upstream="dunfell-5.x.y"
            path="sources/meta-toradex-nxp"/>
 
