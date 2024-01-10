@@ -33,7 +33,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="kirkstone"
+           revision="0ac62f887bf1165f50117d54746be21e52156f92"
            upstream="kirkstone"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -42,7 +42,7 @@
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-renesas"
            remote="qt"
-           revision="dev"
+           revision="49ad45f61fc35396d05b55884c6aade582d96078"
            upstream="dev"
            path="sources/meta-boot2qt-renesas">
     <linkfile dest="sources/templates" src="conf"/>
@@ -51,7 +51,7 @@
   <!-- Qt -->
   <project name="meta-qt6"
            remote="qt"
-           revision="lts-6.5.4"
+           revision="refs/tags/v6.5.4-lts"
            upstream="lts-6.5.4"
            path="sources/meta-qt6"/>
 
