@@ -18,7 +18,7 @@
           fetch="https://github.com/renesas-rcar"/>
   <project name="meta-renesas"
            remote="renesas"
-           revision="644ccf213fed7be3cf68b2a7bd80ae32bcc8a3c8"
+           revision="7f12dca9a7fd1797bea67c1fb8d3a9c74c4a49d8"
            upstream="kirkstone-dev"
            path="sources/meta-renesas"/>
 
@@ -27,8 +27,8 @@
           fetch="ssh://git@git.qt.io/boot2qt"/>
   <project name="renesas-rcar3"
            remote="playground"
-           revision="79433791840724c3a47bc74ad6ae379e92d0a57a"
-           upstream="v5.9.0-eval"
+           revision="758a863a7916271f0d411c5f2c3d56f42f1ea053"
+           upstream="v5.9.0"
            path="sources/renesas-rcar3"
            groups="notdefault"/>
 </manifest>
