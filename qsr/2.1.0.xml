@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="lts-6.5.4.xml"/>
+  <include name="v6.5.4-lts.xml"/>
 
   <remote name="qsr"
           fetch="ssh://codereview.qt-project.org/tqtc-boot2qt"
