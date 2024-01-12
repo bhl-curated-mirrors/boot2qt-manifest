@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/nanbield.xml"/>
+  <include name="base/master.xml"/>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-ti"
@@ -16,12 +16,12 @@
   <!-- Device specific layers -->
   <project name="meta-arm"
            remote="yocto"
-           revision="0bd7fece412f2e83876ebedf814661915e17bac4"
-           upstream="nanbield"
+           revision="c5e288d1bba41fc957413bc5a028fe22231cf381"
+           upstream="master"
            path="sources/meta-arm"/>
   <project name="meta-ti"
            remote="yocto"
-           revision="d3bcad2cbe63d4e1cd2b4e4418d0b3b9c1f864ed"
+           revision="a8ffd3afefae103c3e36bac46fddb821b08d4de4"
            upstream="master"
            path="sources/meta-ti"/>
 </manifest>
