@@ -7,12 +7,12 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.14"
+           revision="refs/tags/yocto-4.0.15"
            upstream="kirkstone"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.14"
+           revision="refs/tags/yocto-4.0.15"
            upstream="kirkstone"
            path="sources/meta-mingw"/>
 
@@ -21,7 +21,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="7da6cb848bc42b3e6bd5d2b37b52ba75510a6ca0"
+           revision="730e44900a0a86265bad93a16b5a5ff344a07266"
            upstream="kirkstone"
            path="sources/meta-openembedded"/>
 
@@ -45,12 +45,12 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="7625e33cd7fd752ee04c7b9b5ba38b73961979ad"
+           revision="0870f92ab9cf685d22f40f5e377f7de2e1c591dd"
            upstream="kirkstone"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision="1a6ea560015ecda5fff8eccaf5b1327f1bb6c57f"
+           revision="9e94b64bdfebcf7bfdf2af6447cec866a4efa814"
            upstream="kirkstone"
            path="sources/meta-freescale-3rdparty"/>
 
@@ -66,7 +66,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="3f0115e9e59f94af54b74838f4f33339ea7584ae"
+           revision="f932ebb2544170f43edd22739f44307809bf8cfb"
            upstream="kirkstone"
            path="sources/meta-intel"/>
 
