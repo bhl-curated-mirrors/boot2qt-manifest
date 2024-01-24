@@ -18,12 +18,12 @@
           fetch="git://git.toradex.com"/>
   <project name="meta-toradex-bsp-common"
            remote="toradex"
-           revision="83127210d5b768699d2345fc7f9f6eb41bf60026"
+           revision="a69aa18b7792c102ffcf339ccd0e8b7aa3a43076"
            upstream="kirkstone-6.x.y"
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
-           revision="8959d1c484340f157137761408ed3377e60674d6"
+           revision="654e95a4c868fa717d213dcd668dffcc6241ced5"
            upstream="kirkstone-6.x.y"
            path="sources/meta-toradex-nxp"/>
 
