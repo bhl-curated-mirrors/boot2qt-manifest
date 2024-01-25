@@ -7,12 +7,12 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-4.3.1"
+           revision="refs/tags/yocto-4.3.2"
            upstream="nanbield"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-4.3.1"
+           revision="refs/tags/yocto-4.3.2"
            upstream="nanbield"
            path="sources/meta-mingw"/>
 
@@ -21,7 +21,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="2da6e1b0e43a8993fd422fee3f83940100b59f4c"
+           revision="da9063bdfbe130f424ba487f167da68e0ce90e7d"
            upstream="nanbield"
            path="sources/meta-openembedded"/>
 
@@ -45,19 +45,19 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="6d583ef990ebfbf20afa1e78722be862ac1ce81b"
+           revision="764794776ed00cd59e1ae4893cfcbff1f0a10f56"
            upstream="master"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision= "7725256e3859b62f1ff201db7f2cf7026c17656d"
+           revision= "baa33812b28d52c9032cbee99eb97c54ae6b6a96"
            upstream="master"
            path="sources/meta-freescale-3rdparty"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="4c033eb07442959ed76d769fd2b4649612327155"
+           revision="b859bc3eca344a585e19390018e97bfba5a74c10"
            upstream="master"
            path="sources/meta-raspberrypi"/>
 
@@ -75,7 +75,7 @@
           fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="0095c518ba21a105b843d06b1321258cd6619fc9"
+           revision="4f2be037c49166045efdb5bf08e288e1a0f5baa3"
            upstream="nanbield"
            path="sources/meta-tegra"/>
 </manifest>
