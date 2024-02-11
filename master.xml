@@ -9,7 +9,7 @@
            path="poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="master"
+           revision="9595f44230fd6e5ca88df874706d69c0160188b8"
            path="meta-mingw"/>
   <remote name="oe"
           fetch="git://git.openembedded.org"/>
