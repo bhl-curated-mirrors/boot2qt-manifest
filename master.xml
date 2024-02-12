@@ -5,11 +5,11 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="6e00774a79b3df07c5e6732c6929ee2e77950592"
+           revision="master"
            path="poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="9595f44230fd6e5ca88df874706d69c0160188b8"
+           revision="master"
            path="meta-mingw"/>
   <remote name="oe"
           fetch="git://git.openembedded.org"/>
