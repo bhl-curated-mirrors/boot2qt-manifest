@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default upstream="kirkstone"/>
+  <default upstream="mickledore"/>
 
   <!-- Yocto -->
   <remote name="yocto"
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.15"
-           upstream="kirkstone"
+           revision="refs/tags/yocto-4.2.4"
+           upstream="mickledore"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-4.0.15"
-           upstream="kirkstone"
+           revision="refs/tags/yocto-4.2.4"
+           upstream="mickledore"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
@@ -21,8 +21,8 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="730e44900a0a86265bad93a16b5a5ff344a07266"
-           upstream="kirkstone"
+           revision="f29290563cb821fae95340ba959749641c69ed7f"
+           upstream="mickledore"
            path="sources/meta-openembedded"/>
 
   <!-- Boot to Qt -->
@@ -33,11 +33,11 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="kirkstone"
-           upstream="kirkstone"
+           revision="f2cfbd1f4c25f638c5c64e5538ae342f3d6ffa74"
+           upstream="mickledore"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf/templates/default"/>
   </project>
 
   <!-- NXP -->
@@ -45,20 +45,20 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="0870f92ab9cf685d22f40f5e377f7de2e1c591dd"
-           upstream="kirkstone"
+           revision="751102ef2e194c3bf517b4ab9673fff62fd956f3"
+           upstream="master"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision="9e94b64bdfebcf7bfdf2af6447cec866a4efa814"
-           upstream="kirkstone"
+           revision="7725256e3859b62f1ff201db7f2cf7026c17656d"
+           upstream="master"
            path="sources/meta-freescale-3rdparty"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="59a6a1b5dd1e21189adec49c61eae04ed3e70338"
-           upstream="kirkstone"
+           revision="9c81413d0b6f41f14f0f9c504d19e312c5b9958f"
+           upstream="mickledore"
            path="sources/meta-raspberrypi"/>
 
   <!-- Intel -->
@@ -66,8 +66,8 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="f932ebb2544170f43edd22739f44307809bf8cfb"
-           upstream="kirkstone"
+           revision="e63d672fedd1328ebd6d0a2632f8bef35598eb21"
+           upstream="mickledore"
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
@@ -75,37 +75,14 @@
           fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="86c19e0d8b795898cf582e04bdf072af4e5b28d8"
-           upstream="kirkstone-l4t-r32.7.x"
+           revision="f0816cf0fd24b18c38011217cfa8ed120cf80a50"
+           upstream="mickledore"
            path="sources/meta-tegra"/>
 
-  <!-- Boot to Qt vendor layer -->
-  <project name="meta-boot2qt-st"
-           remote="qt"
-           revision="dev"
-           upstream="dev"
-           path="sources/meta-boot2qt-st">
-    <linkfile dest="sources/templates" src="conf/templates/default"/>
-  </project>
-
   <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-qt6"
            remote="qt"
-           revision="6.6.2"
+           revision="refs/tags/v6.6.2"
            upstream="6.6.2"
            path="sources/meta-qt6"/>
-
-  <!-- Device specific layers -->
-  <remote name="stm"
-          fetch="https://github.com/STMicroelectronics/"/>
-  <project name="meta-st-stm32mp"
-           remote="stm"
-           revision="kirkstone"
-           upstream="kirkstone"
-           path="sources/meta-st-stm32mp"/>
 </manifest>
