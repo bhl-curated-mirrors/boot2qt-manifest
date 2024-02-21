@@ -18,7 +18,7 @@
           fetch="ssh://git@git.qt.io/boot2qt" />
   <project name="nvidia-devnet-mirror"
            remote="playground"
-           revision="947d7740efa096ab64fa02602b0b1df4a25135fe"
+           revision="bf222acaf4c6e91064dafb2ff4b4e1924f2e604f"
            upstream="linux-aarch64"
            path="sources/nvidia-devnet-mirror"
            groups="notdefault" />
