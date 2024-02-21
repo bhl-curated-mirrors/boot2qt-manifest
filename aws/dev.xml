@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/nanbield.xml" />
+  <include name="base/master.xml" />
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-aws"
@@ -28,12 +28,7 @@
           fetch="https://github.com/aws4embeddedlinux" />
   <project name="meta-aws"
            remote="aws"
-           revision="73cc083650fde1e40f8bca4fba685657cbf9820f"
-           upstream="nanbield"
+           revision="54b3dca52ecfbd33cccbd03d3f9d1460e75e2183"
+           upstream="master"
            path="sources/meta-aws"/>
-  <project name="meta-virtualization"
-           remote="yocto"
-           revision="4372c0ebd99069a5bef99f00ad105bbd35ba3ec2"
-           upstream="nanbield"
-           path="sources/meta-virtualization" />
 </manifest>
