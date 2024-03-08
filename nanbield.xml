@@ -25,6 +25,6 @@
           fetch="https://github.com/kraj"/>
   <project name="meta-clang"
            remote="kraj"
-           revision="master"
+           revision="nanbield"
            path="meta-clang"/>
 </manifest>
