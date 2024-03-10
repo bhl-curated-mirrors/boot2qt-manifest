@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="kirkstone"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.16"
+           upstream="kirkstone"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.16"
+           upstream="kirkstone"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="8609de00952d65bb813a48c535c937324efeb18a"
+           upstream="kirkstone"
+           path="sources/meta-openembedded"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="kirkstone"
+           upstream="kirkstone"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+  </project>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="710e55d529c86d15a93c4421365ef62eb601a49b"
+           upstream="kirkstone"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="9e94b64bdfebcf7bfdf2af6447cec866a4efa814"
+           upstream="kirkstone"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="59a6a1b5dd1e21189adec49c61eae04ed3e70338"
+           upstream="kirkstone"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="f932ebb2544170f43edd22739f44307809bf8cfb"
+           upstream="kirkstone"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="86c19e0d8b795898cf582e04bdf072af4e5b28d8"
+           upstream="kirkstone-l4t-r32.7.x"
+           path="sources/meta-tegra"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-st"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-st">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.7.0"
+           upstream="6.7.0"
+           path="sources/meta-qt6"/>
+
+  <!-- Device specific layers -->
+  <remote name="stm"
+          fetch="https://github.com/STMicroelectronics/"/>
+  <project name="meta-st-stm32mp"
+           remote="stm"
+           revision="kirkstone"
+           upstream="kirkstone"
+           path="sources/meta-st-stm32mp"/>
+</manifest>

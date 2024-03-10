@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="nanbield"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.3.2"
+           upstream="nanbield"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.3.2"
+           upstream="nanbield"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="da9063bdfbe130f424ba487f167da68e0ce90e7d"
+           upstream="nanbield"
+           path="sources/meta-openembedded"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="nanbield"
+           upstream="nanbield"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf/templates/default"/>
+  </project>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="764794776ed00cd59e1ae4893cfcbff1f0a10f56"
+           upstream="master"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision= "baa33812b28d52c9032cbee99eb97c54ae6b6a96"
+           upstream="master"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="b859bc3eca344a585e19390018e97bfba5a74c10"
+           upstream="master"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="039e45e21d2973fc3ce318a25beceae348e4428a"
+           upstream="nanbield"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="4f2be037c49166045efdb5bf08e288e1a0f5baa3"
+           upstream="nanbield"
+           path="sources/meta-tegra"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-qcom"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-qcom">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.7.0"
+           upstream="6.7.0"
+           path="sources/meta-qt6"/>
+
+  <!-- Device specific layers -->
+  <remote name="linaro"
+          fetch="https://github.com/Linaro"/>
+  <project name="meta-qcom"
+           remote="linaro"
+           revision="e94335431ac0f6c37cd5edd3bdfc954adb79894d"
+           upstream="master"
+           path="sources/meta-qcom"/>
+</manifest>
