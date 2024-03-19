@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="scarthgap"/>
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="scarthgap"
+           path="poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="scarthgap"
+           path="meta-mingw"/>
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="scarthgap"
+           path="meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="master"
+           path="meta-python2"/>
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="master"
+           path="meta-clang"/>
+</manifest>
