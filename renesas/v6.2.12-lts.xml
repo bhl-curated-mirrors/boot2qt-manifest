@@ -33,70 +33,25 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="kirkstone"
+           revision="1cbeb28e829fd93e37cc21c77b7b42adf671c010"
            upstream="kirkstone"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
   </project>
-
-  <!-- NXP -->
-  <remote name="freescale"
-          fetch="https://github.com/Freescale"/>
-  <project name="meta-freescale"
-           remote="freescale"
-           revision="710e55d529c86d15a93c4421365ef62eb601a49b"
-           upstream="kirkstone"
-           path="sources/meta-freescale"/>
-  <project name="meta-freescale-3rdparty"
-           remote="freescale"
-           revision="9e94b64bdfebcf7bfdf2af6447cec866a4efa814"
-           upstream="kirkstone"
-           path="sources/meta-freescale-3rdparty"/>
-
-  <!-- Raspberry Pi -->
-  <project name="meta-raspberrypi"
-           remote="yocto"
-           revision="59a6a1b5dd1e21189adec49c61eae04ed3e70338"
-           upstream="kirkstone"
-           path="sources/meta-raspberrypi"/>
-
-  <!-- Intel -->
-  <remote name="intel"
-          fetch="git://git.yoctoproject.org"/>
-  <project name="meta-intel"
-           remote="intel"
-           revision="f932ebb2544170f43edd22739f44307809bf8cfb"
-           upstream="kirkstone"
-           path="sources/meta-intel"/>
-
-  <!-- NVIDIA -->
-  <remote name="OE4T"
-          fetch="https://github.com/OE4T"/>
-  <project name="meta-tegra"
-           remote="OE4T"
-           revision="86c19e0d8b795898cf582e04bdf072af4e5b28d8"
-           upstream="kirkstone-l4t-r32.7.x"
-           path="sources/meta-tegra"/>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-renesas"
            remote="qt"
-           revision="dev"
+           revision="49ad45f61fc35396d05b55884c6aade582d96078"
            upstream="dev"
            path="sources/meta-boot2qt-renesas">
     <linkfile dest="sources/templates" src="conf"/>
   </project>
 
   <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-qt6"
            remote="qt"
-           revision="lts-6.2.12"
+           revision="refs/tags/v6.2.12-lts"
            upstream="lts-6.2.12"
            path="sources/meta-qt6"/>
 
