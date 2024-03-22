@@ -28,7 +28,7 @@
           fetch="https://github.com/aws4embeddedlinux" />
   <project name="meta-aws"
            remote="aws"
-           revision="54b3dca52ecfbd33cccbd03d3f9d1460e75e2183"
+           revision="2550d80f70777303caeb5daa5195d3e36a772b66"
            upstream="master"
            path="sources/meta-aws"/>
 </manifest>
