@@ -33,7 +33,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="nanbield"
+           revision="b2c0cec37fa06a7349446cbaa5778a840b44b59a"
            upstream="nanbield"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -80,14 +80,9 @@
            path="sources/meta-tegra"/>
 
   <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-qt6"
            remote="qt"
-           revision="6.7.0"
+           revision="refs/tags/v6.7.0"
            upstream="6.7.0"
            path="sources/meta-qt6"/>
 </manifest>
