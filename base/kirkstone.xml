@@ -45,7 +45,7 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="710e55d529c86d15a93c4421365ef62eb601a49b"
+           revision="1aa79a0c9b7d6d8af626b2d39a1d518d70d28205"
            upstream="kirkstone"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
@@ -57,7 +57,7 @@
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="59a6a1b5dd1e21189adec49c61eae04ed3e70338"
+           revision="9dc6673d41044f1174551120ce63501421dbcd85"
            upstream="kirkstone"
            path="sources/meta-raspberrypi"/>
 
@@ -66,7 +66,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="f932ebb2544170f43edd22739f44307809bf8cfb"
+           revision="c1eb7440d499ce1516f5f39c9684737072b15321"
            upstream="kirkstone"
            path="sources/meta-intel"/>
 
@@ -75,7 +75,7 @@
           fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="86c19e0d8b795898cf582e04bdf072af4e5b28d8"
+           revision="09d659bc9c46c039d67f799aa44095b6959ca0b9"
            upstream="kirkstone-l4t-r32.7.x"
            path="sources/meta-tegra"/>
 </manifest>
