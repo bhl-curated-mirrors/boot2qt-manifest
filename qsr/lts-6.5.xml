@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/mickledore.xml"/>
+  <include name="base/nanbield.xml"/>
 
   <include name="qt/lts-6.5.xml"/>
 
@@ -9,7 +9,7 @@
            pushurl="ssh://codereview.qt-project.org/tqtc-boot2qt"/>
   <project name="meta-qsr"
            remote="qsr"
-           revision="6.5"
-           upstream="6.5"
+           revision="lts-6.5"
+           upstream="lts-6.5"
            path="sources/meta-qsr"/>
 </manifest>
