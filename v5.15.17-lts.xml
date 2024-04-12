@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-3.1.32"
+           upstream="dunfell"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-3.1.32"
+           upstream="dunfell"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="c74ebbddfd9dbe02d3f7422016324451eb218e1e"
+           upstream="dunfell"
+           path="sources/meta-openembedded"/>
+  <project name="meta-python2"
+           remote="oe"
+           revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8"
+           upstream="dunfell"
+           path="sources/meta-python2"/>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="refs/tags/v5.15.17-lts"
+           upstream="lts-5.15"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+  </project>
+  <project name="meta-qt5"
+           remote="qt"
+           revision="refs/tags/v5.15.17-lts"
+           upstream="lts-5.15"
+           path="sources/meta-qt5"/>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="501032fb30abbad54616a2d9bb4555c297fc35b6"
+           upstream="dunfell"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="5ae8890c1a64271636bcd7773996bddd51e700d8"
+           upstream="dunfell"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="2081e1bb9a44025db7297bfd5d024977d42191ed"
+           upstream="dunfell"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="e482213f37828216c7a7df68ff353652cc865ec1"
+           upstream="dunfell"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="08bb040a2280000b8cde7628b981f112e945dff5"
+           upstream="dunfell"
+           path="sources/meta-tegra"/>
+  <!-- internal layer for the nvidia devnet downloads -->
+  <remote name="playground"
+          fetch="ssh://git@git.qt.io/boot2qt"/>
+  <project name="nvidia-devnet-mirror"
+           remote="playground"
+           revision="8ee9cd3c025cf8b36343fddc77545e597c0d874d"
+           path="sources/nvidia-devnet-mirror"
+           groups="notdefault"/>
+
+  <!-- Toradex -->
+  <remote name="toradex"
+          fetch="git://git.toradex.com"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="b9fbc0307cbd77b78aac194f8ae00e9b734736fb"
+           upstream="dunfell-5.x.y"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="d7075d95ca68661d0e95f5324a19e0397d6b1a45"
+           upstream="dunfell-5.x.y"
+           path="sources/meta-toradex-nxp"/>
+
+  <!-- BoundaryDevices -->
+  <remote name="boundary"
+          fetch="https://github.com/boundarydevices"/>
+  <project name="meta-boundary"
+           remote="boundary"
+           revision="e21fc9dec890947c2644d62ec7af5d83cb8798d7"
+           upstream="dunfell"
+           path="sources/meta-boundary"/>
+</manifest>
