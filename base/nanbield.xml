@@ -45,12 +45,12 @@
           fetch="https://github.com/Freescale"/>
   <project name="meta-freescale"
            remote="freescale"
-           revision="764794776ed00cd59e1ae4893cfcbff1f0a10f56"
-           upstream="master"
+           revision="e6e7c07b08c436310cc9acfe9ff6892155425703"
+           upstream="nanbield"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision= "baa33812b28d52c9032cbee99eb97c54ae6b6a96"
+           revision="8b61684f0b1ba8bacdf3a69d993445e9791d4932"
            upstream="master"
            path="sources/meta-freescale-3rdparty"/>
 
@@ -66,7 +66,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="039e45e21d2973fc3ce318a25beceae348e4428a"
+           revision="e0c541c10f561b9c0087fd07ad5b79b0a534dab1"
            upstream="nanbield"
            path="sources/meta-intel"/>
 
@@ -75,7 +75,7 @@
           fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="4f2be037c49166045efdb5bf08e288e1a0f5baa3"
+           revision="083fc707739afa25eccf1a36f77093341b65b44d"
            upstream="nanbield"
            path="sources/meta-tegra"/>
 </manifest>
