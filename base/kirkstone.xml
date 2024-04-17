@@ -25,6 +25,15 @@
            upstream="kirkstone"
            path="sources/meta-openembedded"/>
 
+  <!-- Clang -->
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="312ff1c39b1bf5d35c0321e873417eb013cea477"
+           upstream="kirkstone"
+           path="sources/meta-clang"/>
+
   <!-- Boot to Qt -->
   <remote name="qt"
           fetch="git://code.qt.io/yocto"

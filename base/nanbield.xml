@@ -25,6 +25,15 @@
            upstream="nanbield"
            path="sources/meta-openembedded"/>
 
+  <!-- Clang -->
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="b71a45630d19f210079f42f6394cdde65195fb84"
+           upstream="nanbield"
+           path="sources/meta-clang"/>
+
   <!-- Boot to Qt -->
   <remote name="qt"
           fetch="git://code.qt.io/yocto"
