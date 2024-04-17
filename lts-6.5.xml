@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/nanbield.xml"/>
+  <include name="base/scarthgap.xml"/>
 
   <include name="qt/lts-6.5.xml"/>
 </manifest>

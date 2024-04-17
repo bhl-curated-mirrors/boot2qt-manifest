@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/nanbield.xml"/>
+  <include name="base/scarthgap.xml"/>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-ti"
            remote="qt"
-           revision="480e9241a97bd8f747c42332202fadfd0afaa829"
+           revision="dev"
            upstream="dev"
            path="sources/meta-boot2qt-ti">
     <linkfile dest="sources/templates" src="conf/templates/default"/>
@@ -16,12 +16,12 @@
   <!-- Device specific layers -->
   <project name="meta-arm"
            remote="yocto"
-           revision="0bd7fece412f2e83876ebedf814661915e17bac4"
-           upstream="nanbield"
+           revision="0aeec5472ced93b403356d310ec78d572199cf0b"
+           upstream="master"
            path="sources/meta-arm"/>
   <project name="meta-ti"
            remote="yocto"
-           revision="d3bcad2cbe63d4e1cd2b4e4418d0b3b9c1f864ed"
-           upstream="master"
+           revision="0be56b799d29bde1950d04b966f401729155bcd0"
+           upstream="scarthgap"
            path="sources/meta-ti"/>
 </manifest>
