@@ -18,7 +18,7 @@
           fetch="https://github.com/riscv"/>
   <project name="meta-riscv"
            remote="riscv"
-           revision="1c22d66c29b7282167949704e7ad18799b8fcbab"
+           revision="master"
            upstream="master"
            path="sources/meta-riscv"/>
 
