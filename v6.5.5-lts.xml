@@ -50,7 +50,7 @@
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision= "baa33812b28d52c9032cbee99eb97c54ae6b6a96"
+           revision="baa33812b28d52c9032cbee99eb97c54ae6b6a96"
            upstream="master"
            path="sources/meta-freescale-3rdparty"/>
 

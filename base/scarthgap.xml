@@ -64,7 +64,7 @@
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
-           revision= "8b61684f0b1ba8bacdf3a69d993445e9791d4932"
+           revision="8b61684f0b1ba8bacdf3a69d993445e9791d4932"
            upstream="scarthgap"
            path="sources/meta-freescale-3rdparty"/>
 
