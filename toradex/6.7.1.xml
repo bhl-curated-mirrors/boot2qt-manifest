@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="kirkstone"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.17"
+           upstream="kirkstone"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.17"
+           upstream="kirkstone"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="8bb16533532b6abc2eded7d9961ab2a108fd7a5b"
+           upstream="kirkstone"
+           path="sources/meta-openembedded"/>
+
+  <!-- Clang -->
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="312ff1c39b1bf5d35c0321e873417eb013cea477"
+           upstream="kirkstone"
+           path="sources/meta-clang"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="kirkstone"
+           upstream="kirkstone"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+  </project>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="1aa79a0c9b7d6d8af626b2d39a1d518d70d28205"
+           upstream="kirkstone"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="9e94b64bdfebcf7bfdf2af6447cec866a4efa814"
+           upstream="kirkstone"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="9dc6673d41044f1174551120ce63501421dbcd85"
+           upstream="kirkstone"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="c1eb7440d499ce1516f5f39c9684737072b15321"
+           upstream="kirkstone"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="09d659bc9c46c039d67f799aa44095b6959ca0b9"
+           upstream="kirkstone-l4t-r32.7.x"
+           path="sources/meta-tegra"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-toradex"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-toradex">
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.7.1"
+           upstream="6.7.1"
+           path="sources/meta-qt6"/>
+
+  <!-- Toradex -->
+  <remote name="toradex"
+          fetch="git://git.toradex.com"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="2dcaafe7d6637c9007ae9951ea43862433224f60"
+           upstream="kirkstone-6.x.y"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="ebaa8499d485f6659db1a2cda2683c3674a5d8f1"
+           upstream="kirkstone-6.x.y"
+           path="sources/meta-toradex-nxp"/>
+
+</manifest>
