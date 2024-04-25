@@ -28,12 +28,12 @@
           fetch="https://github.com/aws4embeddedlinux" />
   <project name="meta-aws"
            remote="aws"
-           revision="73cc083650fde1e40f8bca4fba685657cbf9820f"
+           revision="36c63f86ef4a48ff881eaf0cc9ce5f972adc413f"
            upstream="nanbield"
            path="sources/meta-aws"/>
   <project name="meta-virtualization"
            remote="yocto"
-           revision="4372c0ebd99069a5bef99f00ad105bbd35ba3ec2"
+           revision="ac125d881f34ff356390e19e02964f8980d4ec38"
            upstream="nanbield"
            path="sources/meta-virtualization" />
 </manifest>
