@@ -42,61 +42,34 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="nanbield"
+           revision="ab46faaeb9ee54b2f474c053fda6c370d1ec89b0"
            upstream="nanbield"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf/templates/default"/>
   </project>
 
-  <!-- NXP -->
-  <remote name="freescale"
-          fetch="https://github.com/Freescale"/>
-  <project name="meta-freescale"
-           remote="freescale"
-           revision="e6e7c07b08c436310cc9acfe9ff6892155425703"
-           upstream="nanbield"
-           path="sources/meta-freescale"/>
-  <project name="meta-freescale-3rdparty"
-           remote="freescale"
-           revision="8b61684f0b1ba8bacdf3a69d993445e9791d4932"
-           upstream="master"
-           path="sources/meta-freescale-3rdparty"/>
-
-  <!-- Raspberry Pi -->
-  <project name="meta-raspberrypi"
-           remote="yocto"
-           revision="b859bc3eca344a585e19390018e97bfba5a74c10"
-           upstream="master"
-           path="sources/meta-raspberrypi"/>
-
-  <!-- Intel -->
-  <remote name="intel"
-          fetch="git://git.yoctoproject.org"/>
-  <project name="meta-intel"
-           remote="intel"
-           revision="e0c541c10f561b9c0087fd07ad5b79b0a534dab1"
-           upstream="nanbield"
-           path="sources/meta-intel"/>
-
-  <!-- NVIDIA -->
-  <remote name="OE4T"
-          fetch="https://github.com/OE4T"/>
-  <project name="meta-tegra"
-           remote="OE4T"
-           revision="083fc707739afa25eccf1a36f77093341b65b44d"
-           upstream="nanbield"
-           path="sources/meta-tegra"/>
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-qcom"
+           remote="qt"
+           revision="a1438348b6476fb69bdc84731a159e1a69d7fade"
+           upstream="dev"
+           path="sources/meta-boot2qt-qcom">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
 
   <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-qt6"
            remote="qt"
-           revision="6.7.1"
+           revision="refs/tags/v6.7.1"
            upstream="6.7.1"
            path="sources/meta-qt6"/>
+
+  <!-- Device specific layers -->
+  <remote name="linaro"
+          fetch="https://github.com/Linaro"/>
+  <project name="meta-qcom"
+           remote="linaro"
+           revision="e94335431ac0f6c37cd5edd3bdfc954adb79894d"
+           upstream="master"
+           path="sources/meta-qcom"/>
 </manifest>

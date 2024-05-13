@@ -42,7 +42,7 @@
           fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-boot2qt"
            remote="qt"
-           revision="nanbield"
+           revision="ab46faaeb9ee54b2f474c053fda6c370d1ec89b0"
            upstream="nanbield"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
@@ -88,33 +88,10 @@
            upstream="nanbield"
            path="sources/meta-tegra"/>
 
-  <!-- Boot to Qt vendor layer -->
-  <project name="meta-boot2qt-qcom"
-           remote="qt"
-           revision="dev"
-           upstream="dev"
-           path="sources/meta-boot2qt-qcom">
-    <linkfile dest="sources/templates" src="conf/templates/default"/>
-  </project>
-
   <!-- Qt -->
-  <remote name="qt"
-          fetch="git://code.qt.io/yocto"
-          pushurl="ssh://codereview.qt-project.org/yocto"/>
-  <remote name="gerrit"
-          fetch="ssh://codereview.qt-project.org/yocto"/>
   <project name="meta-qt6"
            remote="qt"
-           revision="6.7.1"
+           revision="refs/tags/v6.7.1"
            upstream="6.7.1"
            path="sources/meta-qt6"/>
-
-  <!-- Device specific layers -->
-  <remote name="linaro"
-          fetch="https://github.com/Linaro"/>
-  <project name="meta-qcom"
-           remote="linaro"
-           revision="e94335431ac0f6c37cd5edd3bdfc954adb79894d"
-           upstream="master"
-           path="sources/meta-qcom"/>
 </manifest>
