@@ -5,12 +5,12 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="poky"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.32"
+           revision="refs/tags/yocto-3.1.33"
            upstream="dunfell"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
-           revision="refs/tags/yocto-3.1.32"
+           revision="refs/tags/yocto-3.1.33"
            upstream="dunfell"
            path="sources/meta-mingw"/>
 
@@ -19,7 +19,7 @@
           fetch="git://git.openembedded.org"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="c74ebbddfd9dbe02d3f7422016324451eb218e1e"
+           revision="01358b6d705071cc0ac5aefa7670ab235709729a"
            upstream="dunfell"
            path="sources/meta-openembedded"/>
   <project name="meta-python2"
@@ -74,7 +74,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="e482213f37828216c7a7df68ff353652cc865ec1"
+           revision="bab936cb4ae5671ceaccf50305a6c0515e6f0222"
            upstream="dunfell"
            path="sources/meta-intel"/>
 
@@ -83,7 +83,7 @@
           fetch="https://github.com/OE4T"/>
   <project name="meta-tegra"
            remote="OE4T"
-           revision="08bb040a2280000b8cde7628b981f112e945dff5"
+           revision="a78fac5cc646c022bdb074c40ddbac80aee6e42f"
            upstream="dunfell"
            path="sources/meta-tegra"/>
   <!-- internal layer for the nvidia devnet downloads -->
@@ -105,7 +105,7 @@
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
-           revision="d7075d95ca68661d0e95f5324a19e0397d6b1a45"
+           revision="5763fe5bfa7645cd8f148f0ef0dcf83c43d38475"
            upstream="dunfell-5.x.y"
            path="sources/meta-toradex-nxp"/>
 
