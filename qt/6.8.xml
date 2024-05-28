@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.8"
+           upstream="6.8"
+           path="sources/meta-qt6"/>
+</manifest>

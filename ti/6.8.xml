@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/scarthgap.xml"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-ti"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-ti">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <include name="qt/6.8.xml"/>
+
+  <!-- Device specific layers -->
+  <project name="meta-arm"
+           remote="yocto"
+           revision="0aeec5472ced93b403356d310ec78d572199cf0b"
+           upstream="master"
+           path="sources/meta-arm"/>
+  <project name="meta-ti"
+           remote="yocto"
+           revision="0be56b799d29bde1950d04b966f401729155bcd0"
+           upstream="scarthgap"
+           path="sources/meta-ti"/>
+</manifest>

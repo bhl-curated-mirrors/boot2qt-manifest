@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/scarthgap.xml"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-riscv"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-riscv">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <include name="qt/6.8.xml"/>
+
+  <!-- RISCV -->
+  <remote name="riscv"
+          fetch="https://github.com/riscv"/>
+  <project name="meta-riscv"
+           remote="riscv"
+           revision="scarthgap"
+           upstream="scarthgap"
+           path="sources/meta-riscv"/>
+
+</manifest>

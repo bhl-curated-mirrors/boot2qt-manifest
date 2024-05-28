@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="base/scarthgap.xml" />
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-aws"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-aws">
+    <linkfile dest="sources/templates" src="conf/templates/default" />
+  </project>
+
+  <include name="qt/6.8.xml" />
+
+  <!-- Internal layer for the proprietary device drivers -->
+  <remote name="playground"
+          fetch="ssh://git@git.qt.io/boot2qt" />
+  <project name="nvidia-devnet-mirror"
+           remote="playground"
+           revision="bf222acaf4c6e91064dafb2ff4b4e1924f2e604f"
+           upstream="linux-aarch64"
+           path="sources/nvidia-devnet-mirror"
+           groups="notdefault" />
+
+  <!-- Device specific layer with its depends -->
+  <remote name="aws"
+          fetch="https://github.com/aws4embeddedlinux" />
+  <project name="meta-aws"
+           remote="aws"
+           revision="b7df61417aaf741260044e4f246844608ee33900"
+           upstream="master"
+           path="sources/meta-aws"/>
+</manifest>
