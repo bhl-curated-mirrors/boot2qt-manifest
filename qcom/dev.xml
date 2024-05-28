@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="base/nanbield.xml"/>
+  <include name="base/scarthgap.xml"/>
 
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-qcom"
@@ -18,7 +18,7 @@
           fetch="https://github.com/Linaro"/>
   <project name="meta-qcom"
            remote="linaro"
-           revision="e94335431ac0f6c37cd5edd3bdfc954adb79894d"
-           upstream="master"
+           revision="scarthgap"
+           upstream="scarthgap"
            path="sources/meta-qcom"/>
 </manifest>
