@@ -18,8 +18,8 @@
           fetch="https://github.com/riscv"/>
   <project name="meta-riscv"
            remote="riscv"
-           revision="master"
-           upstream="master"
+           revision="scarthgap"
+           upstream="scarthgap"
            path="sources/meta-riscv"/>
 
 </manifest>
