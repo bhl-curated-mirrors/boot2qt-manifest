@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="nanbield"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.3.4"
+           upstream="nanbield"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.3.4"
+           upstream="nanbield"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="da9063bdfbe130f424ba487f167da68e0ce90e7d"
+           upstream="nanbield"
+           path="sources/meta-openembedded"/>
+
+  <!-- Clang -->
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="b71a45630d19f210079f42f6394cdde65195fb84"
+           upstream="nanbield"
+           path="sources/meta-clang"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="nanbield"
+           upstream="nanbield"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf/templates/default"/>
+  </project>
+
+  <!-- NXP -->
+  <remote name="freescale"
+          fetch="https://github.com/Freescale"/>
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="e6e7c07b08c436310cc9acfe9ff6892155425703"
+           upstream="nanbield"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="8b61684f0b1ba8bacdf3a69d993445e9791d4932"
+           upstream="master"
+           path="sources/meta-freescale-3rdparty"/>
+
+  <!-- Raspberry Pi -->
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="b859bc3eca344a585e19390018e97bfba5a74c10"
+           upstream="master"
+           path="sources/meta-raspberrypi"/>
+
+  <!-- Intel -->
+  <remote name="intel"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="e0c541c10f561b9c0087fd07ad5b79b0a534dab1"
+           upstream="nanbield"
+           path="sources/meta-intel"/>
+
+  <!-- NVIDIA -->
+  <remote name="OE4T"
+          fetch="https://github.com/OE4T"/>
+  <project name="meta-tegra"
+           remote="OE4T"
+           revision="083fc707739afa25eccf1a36f77093341b65b44d"
+           upstream="nanbield"
+           path="sources/meta-tegra"/>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-aws"
+           remote="qt"
+           revision="dev"
+           upstream="dev"
+           path="sources/meta-boot2qt-aws">
+    <linkfile dest="sources/templates" src="conf/templates/default" />
+  </project>
+
+  <!-- Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-qt6"
+           remote="qt"
+           revision="6.7.2"
+           upstream="6.7.2"
+           path="sources/meta-qt6"/>
+
+  <!-- Internal layer for the proprietary device drivers -->
+  <remote name="playground"
+          fetch="ssh://git@git.qt.io/boot2qt" />
+  <project name="nvidia-devnet-mirror"
+           remote="playground"
+           revision="bf222acaf4c6e91064dafb2ff4b4e1924f2e604f"
+           upstream="linux-aarch64"
+           path="sources/nvidia-devnet-mirror"
+           groups="notdefault" />
+
+  <!-- Device specific layer with its depends -->
+  <remote name="aws"
+          fetch="https://github.com/aws4embeddedlinux" />
+  <project name="meta-aws"
+           remote="aws"
+           revision="36c63f86ef4a48ff881eaf0cc9ce5f972adc413f"
+           upstream="nanbield"
+           path="sources/meta-aws"/>
+  <project name="meta-virtualization"
+           remote="yocto"
+           revision="ac125d881f34ff356390e19e02964f8980d4ec38"
+           upstream="nanbield"
+           path="sources/meta-virtualization" />
+</manifest>
