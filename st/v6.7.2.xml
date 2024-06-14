@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default upstream="kirkstone"/>
+
+  <!-- Yocto -->
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org"/>
+  <project name="poky"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.17"
+           upstream="kirkstone"
+           path="sources/poky"/>
+  <project name="meta-mingw"
+           remote="yocto"
+           revision="refs/tags/yocto-4.0.17"
+           upstream="kirkstone"
+           path="sources/meta-mingw"/>
+
+  <!-- OpenEmbedded -->
+  <remote name="oe"
+          fetch="git://git.openembedded.org"/>
+  <project name="meta-openembedded"
+           remote="oe"
+           revision="8bb16533532b6abc2eded7d9961ab2a108fd7a5b"
+           upstream="kirkstone"
+           path="sources/meta-openembedded"/>
+
+  <!-- Clang -->
+  <remote name="kraj"
+          fetch="https://github.com/kraj"/>
+  <project name="meta-clang"
+           remote="kraj"
+           revision="312ff1c39b1bf5d35c0321e873417eb013cea477"
+           upstream="kirkstone"
+           path="sources/meta-clang"/>
+
+  <!-- Boot to Qt -->
+  <remote name="qt"
+          fetch="git://code.qt.io/yocto"
+          pushurl="ssh://codereview.qt-project.org/yocto"/>
+  <remote name="gerrit"
+          fetch="ssh://codereview.qt-project.org/yocto"/>
+  <project name="meta-boot2qt"
+           remote="qt"
+           revision="50e8b1cd690dc86477abd1d56465f8bc7f0c88a3"
+           upstream="kirkstone"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+
+  <!-- Boot to Qt vendor layer -->
+  <project name="meta-boot2qt-st"
+           remote="qt"
+           revision="3fff66bd66885e89b155d0e88cbda457b592b427"
+           upstream="dev"
+           path="sources/meta-boot2qt-st">
+    <linkfile dest="sources/templates" src="conf/templates/default"/>
+  </project>
+
+  <!-- Qt -->
+  <project name="meta-qt6"
+           remote="qt"
+           revision="refs/tags/v6.7.2"
+           upstream="6.7.2"
+           path="sources/meta-qt6"/>
+
+  <!-- Device specific layers -->
+  <remote name="stm"
+          fetch="https://github.com/STMicroelectronics/"/>
+  <project name="meta-st-stm32mp"
+           remote="stm"
+           revision="311a492c21f0f3643f4b764f8b743c4c6908d31b"
+           upstream="kirkstone"
+           path="sources/meta-st-stm32mp"/>
+</manifest>
