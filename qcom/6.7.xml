@@ -5,7 +5,7 @@
   <!-- Boot to Qt vendor layer -->
   <project name="meta-boot2qt-qcom"
            remote="qt"
-           revision="dev"
+           revision="a1438348b6476fb69bdc84731a159e1a69d7fade"
            upstream="dev"
            path="sources/meta-boot2qt-qcom">
     <linkfile dest="sources/templates" src="conf/templates/default"/>
